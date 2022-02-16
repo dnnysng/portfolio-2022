@@ -1,0 +1,76 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: var(--overlay);
+    backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    padding: 0 2rem;
+    z-index: 99;
+}
+
+.headerWrapper {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.navLink {
+    margin-left: 50px;
+}
+
+.navLink:hover {
+    color: var(--highlight);
+}
+
+.menuIcon {
+    display: none;
+}
+
+@media (max-width: 540px) {
+    .menuIcon {
+        display: block;
+    }
+    .nav {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background: linear-gradient(var(--primary), var(--highlight));
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        padding: 2rem;
+    }
+    .navLink {
+        font-size: 2rem;
+        color: var(--light);
+        margin: 0;
+        background-color: var(--overlay);
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .navLink:first-child {
+        border-radius: 20px 20px 0 0;
+        border-bottom: 1px solid var(--light);
+    }
+    .navLink:last-child {
+        border-radius: 0 0 20px 20px;
+        border-top: 1px solid var(--light);
+    }
+}

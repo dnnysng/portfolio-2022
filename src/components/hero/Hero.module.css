@@ -1,0 +1,32 @@
+.hero {
+    position: relative;
+    top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+    max-width: 1280px;
+}
+
+.topWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 5rem;
+}
+
+.topContent {
+    max-width: 600px;
+}
+
+.topHeading {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.topDescription {
+    font-size: 24px;
+}
+
+.topPhoto {
+    border-radius: 50%;
+    height: 400px;
+}
