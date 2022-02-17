@@ -1,32 +1,88 @@
 .hero {
-    position: relative;
-    top: 80px;
-    height: calc(100vh - 80px);
-    width: 100%;
-    max-width: 1280px;
+  width: 100%;
+  max-width: 1280px;
+  padding: 80px 2rem;
 }
 
 .topWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 130px 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0 0 0;
 }
 
 .topContent {
-    max-width: 600px;
+  max-width: 600px;
+  margin-right: 2rem;
 }
 
 .topHeading {
-    font-size: 64px;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--light);
 }
 
 .topDescription {
-    font-size: 24px;
+  font-size: 24px;
+  color: var(--text);
 }
 
 .topPhoto {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    min-height: 100vh;
+  }
+  .topWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .topPhoto {
     border-radius: 50%;
-    height: 400px;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  .topContent {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .topHeading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 462px) {
+  .hero {
+    max-height: calc(100vh - 80px);
+  }
+  .topWrapper {
+    padding: 2rem 0;
+  }
+  .topPhoto {
+    width: 160px;
+    height: 160px;
+  }
+  .topContent {
+    margin-top: -40px;
+    padding: 2rem;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+  }
+  .topHeading {
+    font-size: 2rem;
+  }
+  .topDescription {
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-size: 1.3rem;
+  }
 }

@@ -1,5 +1,12 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper,
+.wrapperDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg);
+  transition: 0.3s all ease-in-out;
+}
+
+.wrapperDown {
+  margin-top: 228px;
 }

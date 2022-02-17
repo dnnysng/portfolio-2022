@@ -1,44 +1,39 @@
 @font-face {
-    font-family: 'Alata';
-    src: local('Alata'),
-        url('./assets/fonts/Alata-Regular.ttf') format('truetype');
+  font-family: 'Alata';
+  src: local('Alata'),
+    url('./assets/fonts/Alata-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Titillium';
-    src: local('Titillium'),
-        url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-family: 'Titillium';
+  src: local('Titillium'),
+    url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    --light: #fafafaff;
-    --dark: #202020ff;
-    --overlay: #32323299;
-    --text: #959595ff;
-    --primary: #5863f8ff;
-    --highlight: #10ffcbff;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 15px;
+  font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--dark);
-    color: white;
-    margin: 0;
-    font-family: 'Titillium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  color: white;
+  margin: 0;
+  font-family: 'Titillium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 h1,
@@ -47,14 +42,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Alata', sans-serif;
+  font-family: 'Alata', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: var(--light);
+  text-decoration: none;
+  color: var(--light);
 }
 
 p {
-    color: #959595;
+  color: #959595;
 }

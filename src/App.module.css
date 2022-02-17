@@ -1,0 +1,25 @@
+.lightTheme {
+  --bg: #eeeeee;
+  --header-bg: #eeeeeeee;
+  --header-menu-bg: #202020;
+  --header-text: #202020;
+  --header-text-highlight: #5863f8ff;
+  --light: #202020ff;
+  --dark: #ededed;
+  --overlay: #cdcdcd99;
+  --text: #676767;
+  --primary: #5863f8ff;
+}
+
+.darkTheme {
+  --bg: #202020;
+  --header-bg: #202020ee;
+  --header-menu-bg: #eeeeee;
+  --header-text: #fafafa;
+  --header-text-highlight: #5890f8;
+  --light: #fafafaff;
+  --dark: #202020ff;
+  --overlay: #32323299;
+  --text: #959595ff;
+  --primary: #5863f8ff;
+}
