@@ -1,9 +1,9 @@
 .featuredWork {
   width: 100%;
   max-width: 1280px;
-  text-align: left;
   min-height: 100vh;
   padding: 0 2rem;
+  margin-bottom: 6rem;
 }
 
 .image {
