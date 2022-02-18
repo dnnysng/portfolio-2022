@@ -3,12 +3,12 @@
   --header-bg: #eeeeeeee;
   --header-menu-bg: #202020;
   --header-text: #202020;
-  --header-text-highlight: #5863f8ff;
+  --header-text-highlight: #8500b7;
   --light: #202020ff;
   --dark: #ededed;
   --overlay: #cdcdcd99;
   --text: #676767;
-  --primary: #5863f8ff;
+  --primary: #8500b7;
 }
 
 .darkTheme {
@@ -16,12 +16,12 @@
   --header-bg: #202020ee;
   --header-menu-bg: #eeeeee;
   --header-text: #fafafa;
-  --header-text-highlight: #5890f8;
+  --header-text-highlight: #8500b7;
   --light: #fafafaff;
   --dark: #202020ff;
   --overlay: #32323299;
   --text: #959595ff;
-  --primary: #5863f8ff;
+  --primary: #8500b7;
 }
 
 .wrapper {

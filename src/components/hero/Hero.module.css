@@ -29,10 +29,24 @@
   color: var(--text);
 }
 
-.photo {
+.photoWrapper {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.photo,
+.video {
+  background: url('../../assets/videos/cool.mp4');
   border-radius: 50%;
   height: 400px;
   width: 400px;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media (max-width: 960px) {
@@ -44,8 +58,12 @@
     align-items: center;
     padding-top: 2rem;
   }
-  .photo {
-    border-radius: 50%;
+  .photoWrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .photo,
+  .video {
     height: 250px;
     width: 250px;
   }
@@ -68,13 +86,18 @@
   .wrapper {
     padding: 2rem 0;
   }
-  .photo {
-    width: 160px;
-    height: 160px;
+  .photoWrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .photo,
+  .video {
+    height: 200px;
+    width: 200px;
   }
   .content {
     margin-top: -40px;
-    padding: 2rem;
+    padding: 2rem 0;
     z-index: 1;
     backdrop-filter: blur(20px);
   }

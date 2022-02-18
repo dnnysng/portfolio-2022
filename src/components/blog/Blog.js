@@ -12,21 +12,21 @@ const LatestUpdates = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40dannyseng&api_key=j8sqtkrffgu2hsgzry8rkcdjrxewuk8brhyxjqug")
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40dannyseng&api_key=r0xpcslhqezp8mcrrgg8meveoeyzvmjyxpq6hds3")
       .then(res => res.json())
       .then(
         (result) => {
           setIsLoaded(true);
-          setPosts(result);
+          setPosts(result.items)
         },
+      )
+      .catch(
         (error) => {
           setIsLoaded(true);
           setError(error);
         }
       )
   }, [])
-
-  console.log(posts)
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -37,16 +37,17 @@ const LatestUpdates = () => {
       <div className={style.wrapper}>
         <Button
           variant="transparent"
-          href="#latestUpdates"
+          href="#blog"
           label="latest updates"
         />
         <div className={style.cards}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {posts.map(post => <Card
+            title={post.title}
+            date={post.date}
+            thumbnail={post.thumbnail}
+            description={post.description}
+            link={post.link}
+          />)}
         </div>
       </div>
     );

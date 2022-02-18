@@ -6,8 +6,11 @@
 }
 
 .thumbnail {
+  max-height: 50%;
   width: 100%;
   margin-bottom: -7px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .content {
@@ -48,6 +51,6 @@
   font-size: 0.9rem;
 }
 
-.views::after {
-  content: ' views';
+.views::before {
+  content: '>> ';
 }

@@ -9,6 +9,8 @@ import { ReactComponent as Sun } from '../../assets/icons/sun-shape.svg'
 import style from './Header.module.css'
 import theme from '../../App.module.css'
 
+import purple from '../../assets/videos/cool.mp4'
+
 const Header = (props) => {
 
     const [open, cycleOpen] = useCycle(false, true);
@@ -56,6 +58,7 @@ const Header = (props) => {
                             <Link className={style.link} to='/'>Home</Link>
                             <Link className={style.link} to='/work'>Work</Link>
                             <Link className={style.link} to='/contact'>Contact</Link>
+                            <video autoPlay muted type="video/mp4" className={style.video} src={purple} />
                         </motion.nav>
                     )}
                 </AnimatePresence>
