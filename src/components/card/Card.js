@@ -1,15 +1,33 @@
 import React from 'react'
 import style from './Card.module.css'
+import sanitizeHtml from 'sanitize-html'
 
 const Card = (props) => {
+
+  // cleans the blog excerpt of unecessary html tags
+  const dirtyHtml = props.description
+  const cleanHtml = sanitizeHtml(dirtyHtml, {
+    allowedTags: [],
+    nonTextTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+  })
+
+  // formats the date to "Month Day, Year"
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+  const iso = new Date(props.date)
+  const month = iso.getMonth()
+  const day = iso.getDate()
+  const year = iso.getFullYear()
+  const date = `${months[month]} ${day}, ${year}`;
+
   return (
     <div className={style.wrapper}>
       <img className={style.thumbnail} src={props.thumbnail} alt="" />
       <div className={style.content}>
         <h2 className={style.title}>{props.title}</h2>
-        <p className={style.excerpt}>{props.description}</p>
+        <p className={style.excerpt}>{cleanHtml}</p>
         <div className={style.footer}>
-          <p className={style.date}>{props.date}</p>
+          <p className={style.date}>{date}</p>
           <p className={style.views}>Read More</p>
         </div>
       </div>

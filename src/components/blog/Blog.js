@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import style from './Blog.module.css'
-import theme from '../../App.module.css'
 import Button from '../button/Button'
 
 import Card from '../card/Card'
@@ -43,7 +42,7 @@ const LatestUpdates = () => {
         <div className={style.cards}>
           {posts.map(post => <Card
             title={post.title}
-            date={post.date}
+            date={post.pubDate}
             thumbnail={post.thumbnail}
             description={post.description}
             link={post.link}
