@@ -1,34 +1,47 @@
-.button {
-  display: block;
-  background-color: var(--primary);
-  padding: 1rem;
-  border-radius: 10px;
+.base {
+  display: inline-block;
   text-align: center;
-  margin-top: 50px;
-  max-width: 400px;
   font-weight: bold;
   transition: 0.3s all ease-in-out;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+}
+
+.base:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.cta {
+  background-color: var(--primary);
   color: #fafafa;
 }
 
-.button:hover {
-  cursor: pointer;
-  transform: scale(0.9);
+.cta::before {
+  content: '»';
+  margin-right: 0.5rem;
 }
 
-.transparentButton {
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--header-text);
+  color: var(--header-text);
+}
+
+.transparent {
   font-size: 1.6rem;
   color: var(--header-text);
-  display: inline-block;
-  margin-bottom: 2rem;
   text-transform: uppercase;
+  padding: 0;
+  border: none;
 }
 
-.transparentButton::before {
+.transparent::before {
   content: '↓ ';
 }
 
-.transparentButton:hover {
+.transparent:hover {
   color: var(--primary);
-  cursor: pointer;
 }

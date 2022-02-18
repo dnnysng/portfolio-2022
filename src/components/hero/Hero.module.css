@@ -1,33 +1,35 @@
 .hero {
   width: 100%;
-  max-width: 1280px;
-  padding: 80px 2rem;
+  padding: 80px 0;
 }
 
-.topWrapper {
+.wrapper {
   display: flex;
   justify-content: space-between;
   padding: 5rem 0 0 0;
 }
 
-.topContent {
+.content {
   max-width: 600px;
   margin-right: 2rem;
 }
 
-.topHeading {
+.content * {
+  margin-bottom: 2rem;
+}
+
+.heading {
   font-size: 64px;
   line-height: 1.2;
-  margin-bottom: 2rem;
   color: var(--light);
 }
 
-.topDescription {
+.paragraph {
   font-size: 24px;
   color: var(--text);
 }
 
-.topPhoto {
+.photo {
   border-radius: 50%;
   height: 400px;
   width: 400px;
@@ -37,25 +39,24 @@
   .hero {
     min-height: 100vh;
   }
-  .topWrapper {
+  .wrapper {
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 2rem;
   }
-  .topPhoto {
+  .photo {
     border-radius: 50%;
     height: 250px;
     width: 250px;
-    margin-bottom: 1rem;
   }
-  .topContent {
+  .content {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .topHeading {
+  .heading {
     font-size: 3rem;
   }
 }
@@ -64,25 +65,24 @@
   .hero {
     max-height: calc(100vh - 80px);
   }
-  .topWrapper {
+  .wrapper {
     padding: 2rem 0;
   }
-  .topPhoto {
+  .photo {
     width: 160px;
     height: 160px;
   }
-  .topContent {
+  .content {
     margin-top: -40px;
     padding: 2rem;
     z-index: 1;
     backdrop-filter: blur(20px);
   }
-  .topHeading {
+  .heading {
     font-size: 2rem;
   }
-  .topDescription {
+  .description {
     margin-top: -10px;
-    margin-bottom: -20px;
     font-size: 1.3rem;
   }
 }

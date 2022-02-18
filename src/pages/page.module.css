@@ -1,12 +1,13 @@
-.wrapper,
-.wrapperDown {
+.base {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--bg);
   transition: 0.3s all ease-in-out;
+  padding: 0 2rem;
+  min-height: 100vh;
+  max-width: 1280px;
 }
 
-.wrapperDown {
+.slideDown {
   margin-top: 228px;
 }

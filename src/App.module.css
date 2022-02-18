@@ -24,10 +24,9 @@
   --primary: #5863f8ff;
 }
 
-.sectionWrapper {
-  width: 100%;
-  max-width: 1280px;
-  min-height: 100vh;
-  padding: 0 2rem;
-  margin-bottom: 6rem;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+  transition: 0.5s ease-in-out;
 }

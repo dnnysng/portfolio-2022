@@ -1,9 +1,10 @@
 import React from 'react'
-import styles from './button.module.css'
+import styles from './Button.module.css'
 
+/* buttons get props from parent */
 const Button = (props) => {
     return (
-        <a className={styles.button} href={props.href}>
+        <a className={`${styles.base} ${styles[props.variant]}`} href={props.href}>
             {props.label}
         </a>
     )
