@@ -17,7 +17,7 @@
 }
 
 .title {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 1.2;
   color: var(--light);
 }
@@ -25,4 +25,10 @@
 .paragraph {
   font-size: 24px;
   color: var(--text);
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 3rem;
+  }
 }

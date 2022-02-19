@@ -24,11 +24,11 @@ const Footer = () => {
             href="https://medium.com/@dannyseng" />
           <Button
             variant="social"
-            label={<img src={<Linkedin />} alt="" />}
+            label={<Linkedin />}
             href="http://www.twitter.com/dnnysng" />
           <Button
             variant="social"
-            label={<img src={<Twitter />} alt="" />}
+            label={<Twitter />}
             href="https://www.linkedin.com/in/dannyseng/" />
         </div>
       </div>

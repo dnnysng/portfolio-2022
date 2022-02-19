@@ -13,3 +13,31 @@
   width: 100%;
   color: var(--text);
 }
+
+.socialWrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-right: -10px;
+}
+
+.socialWrapper * {
+  margin: 5px 0 0 5px;
+}
+
+@media (max-width: 560px) {
+  .footer {
+    height: max-content;
+  }
+  .wrapper {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .socialWrapper {
+    padding: 1rem 0;
+    margin: 0;
+  }
+  .socialWrapper * {
+    margin: 0 5px;
+  }
+}
