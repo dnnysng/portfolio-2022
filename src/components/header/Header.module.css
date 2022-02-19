@@ -7,7 +7,6 @@
   backdrop-filter: blur(50px);
   display: grid;
   place-items: center;
-  padding: 0 2rem;
   z-index: 99;
   background-color: var(--bg);
   transition: 0.5s all ease-in-out;
@@ -27,19 +26,20 @@
   font-size: 1.5rem;
   color: var(--header-text);
   flex-grow: 1;
+  margin-left: 2rem;
 }
 
 .nav {
   display: flex;
 }
 
-.link {
+.nav .link {
   margin-left: 3rem;
   color: var(--header-text);
   transition: 0.3s all ease-in-out;
 }
 
-.link:hover {
+.nav .link:hover {
   color: var(--header-text-highlight);
 }
 
@@ -47,7 +47,7 @@
   height: 30px;
   width: 30px;
   fill: var(--header-text);
-  margin-left: 3rem;
+  margin: 0 2rem 0 3rem;
   transition: 0.3s all ease-in-out;
 }
 
@@ -65,10 +65,13 @@
 }
 
 @media (max-width: 580px) {
+  .sun {
+    margin: 0;
+  }
   .hamburger {
     display: block;
     stroke: var(--header-text);
-    margin-left: 2rem;
+    margin: 0 2rem;
   }
   .hamburger:hover {
     cursor: pointer;
@@ -78,38 +81,20 @@
   }
   .menu {
     position: absolute;
-    left: 0;
     top: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 0;
-    border-radius: 0 0 0 30px;
+    background: var(--header-menu-bg);
+    border-bottom: 5px solid var(--primary);
   }
-  .video {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-  }
-  .link {
+  .menu .link {
     font-size: 2rem;
     color: var(--header-bg);
     font-weight: bold;
-    margin: 0;
     background-color: var(--header-menu-bg);
-    padding: 1rem 0 1rem 3rem;
-    margin-left: 30%;
-    border-radius: 10px 0 0 10px;
-    margin-bottom: 0.4rem;
-  }
-  .link:nth-of-type(1) {
-    margin-top: 0.3rem;
-  }
-  .link:nth-of-type(2) {
-    margin-left: 40%;
-  }
-  .link:last-of-type {
-    margin-left: 50%;
+    padding: 1rem 0 1rem 2rem;
+    margin: 0 0 0 2rem;
   }
 }

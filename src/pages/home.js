@@ -4,6 +4,8 @@ import React from 'react'
 import Hero from '../components/hero/Hero'
 import Work from '../components/work/Work'
 import Blog from '../components/blog/Blog'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
 
 // styles
 import style from './Page.module.css'
@@ -21,6 +23,8 @@ const home = (props) => {
             <Hero />
             <Work />
             <Blog />
+            <Contact />
+            <Footer />
         </div>
     )
 }

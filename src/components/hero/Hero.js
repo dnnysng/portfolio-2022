@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Hero.module.css'
 import cool from '../../assets/videos/cool.mp4'
-import photo from '../../assets/images/ds-no-bg.png'
+import photo from '../../assets/images/danny-no-bg.png'
 import Button from '../button/Button'
 
 const Hero = (props) => {

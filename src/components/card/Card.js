@@ -8,7 +8,7 @@ const Card = (props) => {
   const dirtyHtml = props.description
   const cleanHtml = sanitizeHtml(dirtyHtml, {
     allowedTags: [],
-    nonTextTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+    nonTextTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'figcaption']
   })
 
   // formats the date to "Month Day, Year"

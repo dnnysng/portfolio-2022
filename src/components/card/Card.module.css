@@ -2,11 +2,12 @@
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  filter: drop-shadow(10px 10px 20px #00000011);
+  box-shadow: 10px 10px 0px var(--primary);
+  height: max-content;
 }
 
 .thumbnail {
-  max-height: 50%;
+  height: 200px;
   width: 100%;
   margin-bottom: -7px;
   object-fit: cover;

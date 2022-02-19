@@ -4,7 +4,6 @@
   font-weight: bold;
   transition: 0.3s all ease-in-out;
   padding: 1rem 2rem;
-  margin-right: 1rem;
   border-radius: 10px;
   border: 2px solid var(--primary);
 }
@@ -44,4 +43,14 @@
 
 .transparent:hover {
   color: var(--primary);
+}
+
+.social {
+  border: none;
+}
+
+.social svg {
+  fill: red;
+  width: 50px;
+  height: 50px;
 }
