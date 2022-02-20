@@ -30,6 +30,7 @@
   display: flex;
   column-gap: 2rem;
   margin-top: 5rem;
+  padding-top: 0rem;
 }
 
 .left,
@@ -54,6 +55,7 @@
   }
   .wrapper {
     flex-wrap: wrap;
+    padding-top: 7rem;
   }
   .left,
   .right {
