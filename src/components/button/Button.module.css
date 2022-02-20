@@ -29,7 +29,7 @@
 }
 
 .transparent {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text);
   text-transform: uppercase;
   padding: 0;
@@ -38,7 +38,11 @@
 }
 
 .transparent::before {
+  color: var(--primary);
   content: '↓ ';
+  font-size: 2rem;
+  position: relative;
+  top: 3px;
 }
 
 .transparent:hover {
