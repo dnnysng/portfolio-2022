@@ -4,7 +4,6 @@
   font-weight: bold;
   transition: 0.3s all ease-in-out;
   padding: 1rem 2rem;
-  border-radius: 10px;
   border: 2px solid var(--primary);
 }
 
@@ -30,11 +29,13 @@
 }
 
 .transparent {
-  font-size: 1.6rem;
-  color: var(--header-text);
+  font-size: 2rem;
+  color: var(--text);
   text-transform: uppercase;
   padding: 0;
   border: none;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
 }
 
 .transparent::before {
@@ -67,6 +68,9 @@
 }
 
 @media (max-width: 560px) {
+  .cta {
+    padding: 1rem;
+  }
   .social svg {
     padding: 0.8rem;
   }

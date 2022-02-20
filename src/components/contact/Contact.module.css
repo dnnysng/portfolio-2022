@@ -1,6 +1,6 @@
 .contact {
   width: 100%;
-  padding: 80px 0;
+  padding: 80px 0 150px 0;
 }
 
 .wrapper {
@@ -27,8 +27,11 @@
   color: var(--text);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 540px) {
   .title {
     font-size: 3rem;
+  }
+  .contact {
+    padding: 80px 0;
   }
 }

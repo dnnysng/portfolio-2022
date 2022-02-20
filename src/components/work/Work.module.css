@@ -10,12 +10,19 @@
   height: 60vh;
   object-fit: cover;
   transition: 0.3s all ease-in-out;
-  border-radius: 10px;
 }
 
 .image:hover {
   transform: scale(0.95);
   cursor: pointer;
+}
+
+.image:nth-child(2) {
+  border-right: 1rem solid var(--primary);
+}
+
+.image:nth-child(1) {
+  border-left: 1rem solid var(--primary);
 }
 
 .wrapper {

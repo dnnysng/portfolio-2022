@@ -1,26 +1,30 @@
 .wrapper {
   width: 100%;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 10px 10px 0px var(--primary);
   height: max-content;
+  background: var(--primary);
 }
 
 .thumbnail {
   height: 200px;
   width: 100%;
+  margin: 0;
   margin-bottom: -7px;
   object-fit: cover;
   object-position: top;
+  z-index: 0;
+  border-bottom: 5px solid var(--primary);
+  border-left: 1rem solid var(--primary);
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  background: #fafafa;
+  background: white;
   color: var(--bg);
   padding: 1.5rem 1.5rem 0 1.5rem;
-  border-radius: 0 0 10px 10px;
+  z-index: 1;
+  border-right: 1rem solid var(--primary);
 }
 
 .content *:not(.footer) {

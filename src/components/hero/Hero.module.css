@@ -82,6 +82,7 @@
 @media (max-width: 462px) {
   .hero {
     max-height: calc(100vh - 80px);
+    margin-bottom: -8rem;
   }
   .wrapper {
     padding: 2rem 0;
@@ -99,12 +100,15 @@
     margin-top: -40px;
     padding: 2rem 0;
     z-index: 1;
-    backdrop-filter: blur(20px);
+  }
+  .content * {
+    margin-bottom: 1.3rem;
   }
   .heading {
+    margin-top: 1rem;
     font-size: 2rem;
   }
-  .description {
+  .paragraph {
     margin-top: -10px;
     font-size: 1.3rem;
   }

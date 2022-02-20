@@ -4,11 +4,10 @@
   left: 0;
   height: 80px;
   width: 100%;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(100px) contrast(95%);
   display: grid;
   place-items: center;
   z-index: 99;
-  background-color: var(--bg);
   transition: 0.5s all ease-in-out;
 }
 

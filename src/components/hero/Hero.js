@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Hero.module.css'
 import cool from '../../assets/videos/cool.mp4'
-import photo from '../../assets/images/danny-no-bg.png'
+import photo from '../../assets/images/cartoon-danny.png'
 import Button from '../button/Button'
 
 const Hero = (props) => {
@@ -10,9 +10,9 @@ const Hero = (props) => {
             <div className={style.wrapper}>
                 <div className={style.content}>
                     <h1 className={style.heading}>Bringing your visions to life, one pixel at a time.</h1>
-                    <p className={style.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut, exercitationem quae suscipit expedita impedit dolor!</p>
+                    <p className={style.paragraph}>Looking for a Frontend Developer with a solid foundation in HTML, CSS, and JavaScript, who's framework of choice is React? Click below. </p>
                     <Button
-                        label="Email Me: danny.s.seng@gmail.com"
+                        label="Send an email to danny.s.seng@gmail.com"
                         href="mailto:danny.s.seng@gmail.com"
                         variant="cta"
                         dark={props.dark}
