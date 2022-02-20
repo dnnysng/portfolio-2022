@@ -10,9 +10,9 @@ const Hero = (props) => {
             <div className={style.wrapper}>
                 <div className={style.content}>
                     <h1 className={style.heading}>Bringing your visions to life, one pixel at a time.</h1>
-                    <p className={style.paragraph}>Looking for a Frontend Developer with a solid foundation in HTML, CSS, and JavaScript, who's framework of choice is React? Click below. </p>
+                    <p className={style.paragraph}>I'm a <strong>Frontend Developer</strong> who is ready to put my skills to work on <em>your projects</em>.</p>
                     <Button
-                        label="Send an email to danny.s.seng@gmail.com"
+                        label="Email me at danny.s.seng@gmail.com"
                         href="mailto:danny.s.seng@gmail.com"
                         variant="cta"
                         dark={props.dark}

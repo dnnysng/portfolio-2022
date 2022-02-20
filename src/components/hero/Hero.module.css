@@ -82,7 +82,6 @@
 @media (max-width: 462px) {
   .hero {
     max-height: calc(100vh - 80px);
-    margin-bottom: -8rem;
   }
   .wrapper {
     padding: 2rem 0;
