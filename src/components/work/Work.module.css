@@ -47,6 +47,7 @@
 @media (max-width: 720px) {
   .work {
     text-align: center;
+    margin-top: -9.5rem;
   }
   .left {
     margin: 0 0 2rem 0;
