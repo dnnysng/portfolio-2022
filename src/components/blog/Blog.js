@@ -47,20 +47,6 @@ const LatestUpdates = () => {
             description={post.description}
             link={post.link}
           />)}
-          {posts.map(post => <Card
-            title={post.title}
-            date={post.pubDate}
-            thumbnail={post.thumbnail}
-            description={post.description}
-            link={post.link}
-          />)}
-          {posts.map(post => <Card
-            title={post.title}
-            date={post.pubDate}
-            thumbnail={post.thumbnail}
-            description={post.description}
-            link={post.link}
-          />)}
         </div>
       </div>
     );
