@@ -5,9 +5,14 @@
   margin: 6rem 0;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 960px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   .cards {
     grid-template-columns: 1fr 1fr;
+    padding-top: 7rem;
   }
 }
 
