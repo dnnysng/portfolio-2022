@@ -7,8 +7,8 @@ const Contact = () => {
     <div className={style.contact}>
       <div className={style.wrapper}>
         <h1 className={style.title}>Contact Me</h1>
-        <p className={style.paragraph}>If you're looking for a frontend developer I'm currently available for hire. Let's talk!</p>
-        <Button variant="cta" label="Send an email to danny.s.seng@gmail.com" />
+        <p className={style.paragraph}>I'm an experienced <strong>frontend developer</strong> available for hire. Let's talk!</p>
+        <Button variant="cta" label="Email me at danny.s.seng@gmail.com" />
       </div>
     </div>
   )
