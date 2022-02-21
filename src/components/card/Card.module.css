@@ -33,6 +33,11 @@
 
 .title {
   color: #202020;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  flex-grow: 1;
 }
 
 .excerpt {
