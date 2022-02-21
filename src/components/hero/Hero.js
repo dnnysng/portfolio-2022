@@ -10,7 +10,7 @@ const Hero = (props) => {
             <div className={style.wrapper}>
                 <div className={style.content}>
                     <h1 className={style.heading}>Bringing your visions to life, one pixel at a time.</h1>
-                    <p className={style.paragraph}>I'm a <strong>Frontend Developer</strong> who is ready to put my skills to work on <em>your projects</em>.</p>
+                    <p className={style.paragraph}>I'm an experienced <strong>Frontend Developer</strong> who is ready to work on <em>your projects</em>.</p>
                     <Button
                         label="Email me at danny.s.seng@gmail.com"
                         href="mailto:danny.s.seng@gmail.com"
