@@ -25,7 +25,7 @@ const Header = (props) => {
 
     // scroll to top
     const scrollToTop = () => {
-        toggleMenu()
+        open && toggleMenu()
         window.scrollTo({
             top: 0,
         });
