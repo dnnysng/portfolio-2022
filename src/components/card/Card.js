@@ -28,7 +28,7 @@ const Card = (props) => {
         <p className={style.excerpt}>{cleanHtml}</p>
         <div className={style.footer}>
           <p className={style.date}>{date}</p>
-          <p className={style.views}>Read More</p>
+          <a className={style.views} href={props.link} target="blank_">Read More</a>
         </div>
       </div>
     </div>
