@@ -30,16 +30,21 @@
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav .link {
+  font-size: 1rem;
   margin-left: 3rem;
   color: var(--header-text);
   transition: 0.3s all ease-in-out;
+  background: none;
+  border: none;
 }
 
 .nav .link:hover {
   color: var(--header-text-highlight);
+  cursor: pointer;
 }
 
 .sun {
@@ -89,6 +94,8 @@
     border-bottom: 5px solid var(--primary);
   }
   .menu .link {
+    text-align: left;
+    border: none;
     font-size: 2rem;
     color: var(--header-bg);
     font-weight: bold;

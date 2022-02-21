@@ -53,3 +53,9 @@ a {
 p {
   color: #959595;
 }
+
+a,
+p,
+button {
+  font-family: 'Titillium', sans-serif;
+}

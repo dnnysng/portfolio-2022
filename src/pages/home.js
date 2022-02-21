@@ -8,7 +8,7 @@ import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 
 // styles
-import style from './Page.module.css'
+import style from './Home.module.css'
 import theme from '../App.module.css'
 
 const home = (props) => {

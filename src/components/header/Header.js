@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
 
 // svgs imported as components
@@ -24,14 +23,22 @@ const Header = (props) => {
         props.callback.menuCheck(!props.menu)
     }
 
+    // scroll to top
+    const scrollToTop = () => {
+        toggleMenu()
+        window.scrollTo({
+            top: 0,
+        });
+    }
+
     return (
         <header className={`${style.header} ${props.dark ? theme.darkTheme : theme.lightTheme}`}>
             <div className={style.wrapper}>
                 <h3 className={style.logo}>Danny Seng</h3>
                 <nav className={style.nav}>
-                    <Link className={style.link} to='/'>Home</Link>
-                    <Link className={style.link} to='/work'>Work</Link>
-                    <Link className={style.link} to='/contact'>Contact</Link>
+                    <button className={style.link} onClick={scrollToTop}>Home</button>
+                    <a className={style.link} href='#work'>Work</a>
+                    <a className={style.link} href='#contact'>Contact</a>
                 </nav>
                 <Sun
                     onClick={toggleDark}
@@ -53,9 +60,9 @@ const Header = (props) => {
                                 height: 0,
                             }}
                             className={style.menu}>
-                            <Link className={style.link} to='/'>Home</Link>
-                            <Link className={style.link} to='/work'>Work</Link>
-                            <Link className={style.link} to='/contact'>Contact</Link>
+                            <button className={style.link} onClick={scrollToTop}>Home</button>
+                            <a className={style.link} onClick={toggleMenu} href='#work'>Work</a>
+                            <a className={style.link} onClick={toggleMenu} href='#contact'>Contact</a>
                         </motion.nav>
                     )}
                 </AnimatePresence>
