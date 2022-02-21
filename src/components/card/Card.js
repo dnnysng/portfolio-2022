@@ -22,7 +22,9 @@ const Card = (props) => {
 
   return (
     <div className={style.wrapper}>
-      <img className={style.thumbnail} src={props.thumbnail} alt="" />
+      <a href={props.link} target="blank_">
+        <img className={style.thumbnail} src={props.thumbnail} alt={`${props.title} - Thumbnail`} />
+      </a>
       <div className={style.content}>
         <h2 className={style.title}>{props.title}</h2>
         <p className={style.excerpt}>{cleanHtml}</p>
