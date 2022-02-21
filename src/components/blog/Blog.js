@@ -36,10 +36,10 @@ const LatestUpdates = () => {
       <div className={style.wrapper}>
         <Button
           variant="transparent"
-          href="#blog"
+          href="#latestUpdates"
           label="latest updates"
         />
-        <div className={style.cards}>
+        <div id="latestUpdates" className={style.cards}>
           {posts.map(post => <Card
             title={post.title}
             date={post.pubDate}
