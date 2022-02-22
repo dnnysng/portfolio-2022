@@ -5,6 +5,7 @@
   transition: 0.3s all ease-in-out;
   padding: 1rem 2rem;
   border: 2px solid var(--primary);
+  margin: 0;
 }
 
 .base:hover {
@@ -34,7 +35,6 @@
   text-transform: uppercase;
   padding: 0;
   border: none;
-  margin-bottom: 3rem;
 }
 
 .transparent::before {

@@ -1,32 +1,32 @@
 .hero {
+  height: calc(80vh - 80px);
   width: 100%;
-  padding: 80px 0;
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0 0 0;
 }
 
 .content {
-  max-width: 530px;
-  margin-right: 2rem;
-}
-
-.content * {
-  margin-bottom: 2rem;
+  max-width: 560px;
 }
 
 .heading {
-  font-size: 64px;
-  line-height: 1.2;
+  font-size: 4rem;
   color: var(--light);
+  line-height: 1.2;
 }
 
 .paragraph {
-  font-size: 24px;
+  font-size: 1.8rem;
   color: var(--text);
+  margin: 2rem 0;
 }
 
 .photoWrapper {
@@ -51,16 +51,16 @@
 
 @media (max-width: 960px) {
   .hero {
-    min-height: 100vh;
+    height: calc(80vh - 80px);
   }
   .wrapper {
     flex-direction: column-reverse;
     align-items: center;
-    padding-top: 2rem;
   }
   .photoWrapper {
     width: 230px;
     height: 230px;
+    margin-bottom: 1rem;
   }
   .photo,
   .video {
@@ -75,17 +75,16 @@
     text-align: center;
   }
   .heading {
-    font-size: 5vh;
-    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .paragraph {
+    margin: 1.5rem 0;
   }
 }
 
-@media (max-width: 462px) {
+@media (max-width: 460px) {
   .hero {
-    max-height: calc(100vh - 80px);
-  }
-  .wrapper {
-    padding: 2rem 0;
+    height: calc(82vh - 80px);
   }
   .photoWrapper {
     width: 200px;
@@ -96,19 +95,10 @@
     height: 200px;
     width: 200px;
   }
-  .content {
-    margin-top: -40px;
-    padding: 2rem 0;
-    z-index: 1;
-  }
-  .content * {
-    margin-bottom: 1.3rem;
-  }
   .heading {
     font-size: 2rem;
   }
   .paragraph {
-    margin-top: -10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
