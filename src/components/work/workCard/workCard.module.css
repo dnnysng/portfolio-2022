@@ -52,7 +52,8 @@
 
 @media (max-width: 960px) {
   .wrapper {
-    padding-top: 3rem;
+    padding-top: 0;
+    border: 1px solid red;
   }
   .wrapper:nth-child(even) .projectWrapper {
     flex-direction: column;
@@ -60,29 +61,35 @@
   .projectWrapper {
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
   .thumbnail {
+    position: absolute;
     margin: 0;
-    width: 100%;
+    width: 130%;
+    max-width: 130%;
     z-index: 1;
+    margin-top: -100px;
+    left: 0;
   }
   .wrapper:nth-child(even) .thumbnail {
+    position: absolute;
     margin: 0;
+    width: 130%;
+    max-width: 130%;
+    z-index: 1;
+    margin-top: -100px;
+    left: 0;
   }
   .content {
-    border-top: 10px solid var(--primary);
-    border-bottom: 10px solid var(--primary);
     width: 100%;
     max-width: 100%;
     text-align: left;
-    padding: 4rem 3rem 3rem 3rem;
-    background-color: #ffffff;
+    padding: 4rem 0 3rem 0;
+    margin-top: 700px;
   }
-  .title {
-    color: #202020;
-  }
-  .button:nth-child(4) {
-    color: #202020;
+  .description {
+    font-size: 1.8rem;
   }
 }
 
@@ -90,17 +97,11 @@
   .wrapper {
     padding-top: 0;
   }
-  .content {
-    padding: 2rem;
-  }
   .title {
     font-size: 2.5rem;
   }
   .description {
     font-size: 1rem;
     text-align: justify;
-  }
-  .button {
-    padding: 0.7rem 1rem;
   }
 }
