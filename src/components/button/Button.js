@@ -7,7 +7,7 @@ const Button = (props) => {
         <a
             className={`${styles.base} ${styles[props.variant]} ${props.className}`}
             href={props.href}
-            target="blank_"
+            target={props.variant === "transparent" ? "" : "blank_"}
         >
             {props.label}
         </a>
