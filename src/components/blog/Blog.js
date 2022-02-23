@@ -39,8 +39,10 @@ const LatestUpdates = () => {
           href="#latestUpdates"
           label="latest updates"
         />
-        <div id="latestUpdates" className={style.cards}>
+        <p id="latestUpdates" className="anchor"></p>
+        <div className={style.cards}>
           {posts.map(post => <Card
+            key={post.title}
             title={post.title}
             date={post.pubDate}
             thumbnail={post.thumbnail}

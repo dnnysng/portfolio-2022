@@ -1,27 +1,19 @@
 .lightTheme {
-  --bg: #eeeeee;
-  --header-bg: #eeeeeeee;
-  --header-menu-bg: #202020;
-  --header-text: #202020;
-  --header-text-highlight: #8500b7;
-  --light: #202020ff;
-  --dark: #eeeeee;
-  --overlay: #cdcdcd99;
+  --bg: #ededed;
+  --foreground: #202020;
+  --line: #67676733;
   --text: #676767;
   --primary: #8500b7;
+  --shadow: #00000040;
 }
 
 .darkTheme {
   --bg: #202020;
-  --header-bg: #202020ee;
-  --header-menu-bg: #eeeeee;
-  --header-text: #fafafa;
-  --header-text-highlight: #8500b7;
-  --light: #fafafaff;
-  --dark: #202020ff;
-  --overlay: #32323299;
+  --foreground: #fafafa;
+  --line: #95959533;
   --text: #959595ff;
   --primary: #8500b7;
+  --shadow: #00000055;
 }
 
 .wrapper {

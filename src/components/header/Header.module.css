@@ -4,7 +4,7 @@
   left: 0;
   height: 80px;
   width: 100%;
-  backdrop-filter: blur(100px) contrast(95%);
+  backdrop-filter: blur(100px);
   display: grid;
   place-items: center;
   z-index: 99;
@@ -23,7 +23,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  color: var(--header-text);
+  color: var(--foreground);
   flex-grow: 1;
   margin-left: 2rem;
 }
@@ -36,21 +36,21 @@
 .nav .link {
   font-size: 1rem;
   margin-left: 3rem;
-  color: var(--header-text);
+  color: var(--foreground);
   transition: 0.3s all ease-in-out;
   background: none;
   border: none;
 }
 
 .nav .link:hover {
-  color: var(--header-text-highlight);
+  color: var(--primary);
   cursor: pointer;
 }
 
 .sun {
   height: 30px;
   width: 30px;
-  fill: var(--header-text);
+  fill: var(--foreground);
   margin: 0 2rem 0 3rem;
   transition: 0.3s all ease-in-out;
 }
@@ -74,7 +74,7 @@
   }
   .hamburger {
     display: block;
-    stroke: var(--header-text);
+    stroke: var(--foreground);
     margin: 0 2rem;
   }
   .hamburger:hover {
@@ -90,16 +90,16 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: var(--header-menu-bg);
+    background: var(--foreground);
     border-bottom: 5px solid var(--primary);
   }
   .menu .link {
     text-align: left;
     border: none;
     font-size: 2rem;
-    color: var(--header-bg);
+    color: var(--bg);
     font-weight: bold;
-    background-color: var(--header-menu-bg);
+    background-color: var(--foreground);
     padding: 1rem 0 1rem 2rem;
     margin: 0 0 0 2rem;
   }

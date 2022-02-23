@@ -2,17 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem 2rem;
-  margin: 6rem 0;
+  margin: 10rem 0 6rem 0;
 }
 
 @media (max-width: 960px) {
   .wrapper {
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
     padding-top: 7rem;
+    margin: 6rem 0;
   }
 }
 

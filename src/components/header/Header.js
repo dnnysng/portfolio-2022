@@ -69,7 +69,7 @@ const Header = (props) => {
                 <Hamburger
                     onClick={toggleMenu}
                     className={style.hamburger}
-                    alt="" />
+                />
             </div>
         </header>
     )

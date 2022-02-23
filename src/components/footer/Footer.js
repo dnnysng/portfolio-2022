@@ -5,7 +5,7 @@ import Button from '../button/Button'
 // social icons
 import { ReactComponent as Medium } from '../../assets/icons/medium.svg'
 import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg'
-import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
+import { ReactComponent as Github } from '../../assets/icons/github.svg'
 
 const Footer = () => {
 
@@ -21,15 +21,18 @@ const Footer = () => {
           <Button
             variant="social"
             label={<Medium />}
-            href="https://medium.com/@dannyseng" />
+            href="https://medium.com/@dannyseng"
+            target="blank_" />
           <Button
             variant="social"
             label={<Linkedin />}
-            href="http://www.twitter.com/dnnysng" />
+            href="https://www.linkedin.com/in/dannyseng/"
+            target="blank_" />
           <Button
             variant="social"
-            label={<Twitter />}
-            href="https://www.linkedin.com/in/dannyseng/" />
+            label={<Github />}
+            href="http://www.github.com/dnnysng"
+            target="blank_" />
         </div>
       </div>
     </footer>

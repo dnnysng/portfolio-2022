@@ -4,7 +4,11 @@ import styles from './Button.module.css'
 /* buttons get props from parent */
 const Button = (props) => {
     return (
-        <a className={`${styles.base} ${styles[props.variant]} ${props.className}`} href={props.href}>
+        <a
+            className={`${styles.base} ${styles[props.variant]} ${props.className}`}
+            href={props.href}
+            target="blank_"
+        >
             {props.label}
         </a>
     )

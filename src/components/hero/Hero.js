@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Hero.module.css'
 import cool from '../../assets/videos/cool.mp4'
-import photo from '../../assets/images/cartoon-danny.png'
+import photo from '../../assets/images/cartoon-danny-min.png'
 import Button from '../button/Button'
 
 const Hero = (props) => {
@@ -19,8 +19,8 @@ const Hero = (props) => {
                     />
                 </div>
                 <div className={style.photoWrapper}>
-                    <video loop muted autoPlay type="video/mp4" className={style.video} src={cool} alt="" />
-                    <img className={style.photo} src={photo} alt="" />
+                    <video loop muted autoPlay type="video/mp4" className={style.video} src={cool} alt="Animated purple background" />
+                    <img className={style.photo} src={photo} alt="Portrait of Danny Seng" />
                 </div>
             </div>
         </div>

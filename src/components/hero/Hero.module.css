@@ -19,7 +19,7 @@
 
 .heading {
   font-size: 4rem;
-  color: var(--light);
+  color: var(--foreground);
   line-height: 1.2;
 }
 

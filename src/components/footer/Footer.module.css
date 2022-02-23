@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  border-top: 1px solid var(--overlay);
+  border-top: 1px solid var(--line);
   height: 100px;
   display: grid;
   place-items: center;

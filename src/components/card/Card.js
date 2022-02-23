@@ -23,10 +23,10 @@ const Card = (props) => {
   return (
     <div className={style.wrapper}>
       <a href={props.link} target="blank_">
-        <img className={style.thumbnail} src={props.thumbnail} alt={`${props.title} - Thumbnail`} />
+        <img className={style.thumbnail} src={props.thumbnail} alt={`Thumbnail for "${props.title}" blog post`} />
       </a>
       <div className={style.content}>
-        <h2 className={style.title}>{props.title}</h2>
+        <a className={style.title} href={props.link} target="blank_">{props.title}</a>
         <p className={style.excerpt}>{cleanHtml}</p>
         <div className={style.footer}>
           <p className={style.date}>{date}</p>
