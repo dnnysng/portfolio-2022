@@ -20,5 +20,8 @@
   display: flex;
   justify-content: center;
   background-color: var(--bg);
-  transition: 0.5s ease-in-out;
+}
+
+.loaderWrapper {
+  transition: 0.3s all ease-in-out;
 }
