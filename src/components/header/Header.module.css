@@ -8,6 +8,7 @@
   align-items: center;
   z-index: 99;
   transition: 0.5s all ease-in-out;
+  backdrop-filter: blur(100px);
 }
 
 .wrapper {
