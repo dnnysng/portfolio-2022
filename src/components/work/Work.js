@@ -34,23 +34,25 @@ const Work = () => {
   ]
 
   return (
-    <section className={style.work}>
-      <Button
-        className={style.button}
-        variant="transparent"
-        href="#work"
-        label="featured work"
-      />
-      <p id="work" className={style.anchor}></p>
-      {projects.map(project =>
-        <Card
-          image={project.image}
-          title={project.title}
-          description={project.description}
-          live={project.live}
-          github={project.github}
+    <section className={style.block}>
+      <div className={style.wrapper}>
+        <Button
+          className={style.button}
+          variant="transparent"
+          href="#work"
+          label="featured work"
         />
-      )}
+        <p id="work" className={style.anchor}></p>
+        {projects.map(project =>
+          <Card
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            live={project.live}
+            github={project.github}
+          />
+        )}
+      </div>
     </section>
   )
 }

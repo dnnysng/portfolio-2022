@@ -1,8 +1,11 @@
-.work {
+.block {
   width: 100%;
-  max-width: 1280px;
-  top: 80px;
-  margin-top: 80px;
+  border: 1px solid white;
+}
+
+.wrapper {
+  padding: 2rem;
+  border: 5px solid red;
 }
 
 .anchor {
@@ -12,7 +15,16 @@
   visibility: hidden;
 }
 
+.button {
+  display: block;
+  text-align: left;
+  border: 1px solid yellow;
+}
+
 @media (max-width: 960px) {
+  .button {
+    text-align: center;
+  }
   .work {
     display: flex;
     flex-direction: column;
@@ -23,7 +35,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 460px) {
   .work {
     margin-top: 80px;
   }
