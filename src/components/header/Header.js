@@ -32,7 +32,7 @@ const Header = (props) => {
     }
 
     return (
-        <header className={`${style.header} ${props.dark ? theme.darkTheme : theme.lightTheme}`}>
+        <header className={`${style.block} ${props.dark ? theme.darkTheme : theme.lightTheme}`}>
             <div className={style.wrapper}>
                 <h3 className={style.logo}>Danny Seng</h3>
                 <nav className={style.nav}>
