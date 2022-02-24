@@ -28,6 +28,12 @@
   flex-grow: 1;
 }
 
+.logo:hover {
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
 .nav {
   display: flex;
   justify-content: center;
