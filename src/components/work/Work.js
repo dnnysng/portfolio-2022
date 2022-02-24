@@ -14,7 +14,7 @@ const Work = () => {
     {
       "image": afexpress,
       "title": "AF Express NFT",
-      "description": "Non-fungible, but oh so delicious. This site is serves as the portal for the AF Express NFT community. A group dedicated to the love of Asian foods.",
+      "description": "Non-fungible, but oh so delicious. This site serves as the portal for the AF Express NFT community. A group dedicated to the love of Asian foods.",
       "live": "https://www.afexpress.art"
     },
     {
