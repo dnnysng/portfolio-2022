@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 14rem 2rem;
 }
 
 .title {
@@ -22,6 +22,9 @@
 }
 
 @media (max-width: 460px) {
+  .wrapper {
+    padding: 8rem 0;
+  }
   .title {
     font-size: 3rem;
   }
