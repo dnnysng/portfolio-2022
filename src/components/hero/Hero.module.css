@@ -1,46 +1,50 @@
-.hero {
-  height: calc(80vh - 80px);
+.block {
   width: 100%;
-  position: relative;
-  top: 80px;
+  margin-top: 65px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
+  width: 100%;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-  max-width: 560px;
+  padding: 5rem 0rem;
+  min-width: 560px;
+  width: 560px;
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--foreground);
   line-height: 1.2;
 }
 
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--text);
   margin: 2rem 0;
 }
 
 .photoWrapper {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: max-content;
   position: relative;
+  margin-left: 2rem;
 }
 
 .photo,
 .video {
   background: url('../../assets/videos/cool.mp4');
   border-radius: 50%;
-  height: 400px;
-  width: 400px;
+  width: 100%;
 }
 
 .photo {
@@ -50,55 +54,45 @@
 }
 
 @media (max-width: 960px) {
-  .hero {
-    height: calc(80vh - 80px);
-  }
   .wrapper {
+    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    padding: 2rem;
   }
   .photoWrapper {
-    width: 230px;
-    height: 230px;
-    margin-bottom: 1rem;
-  }
-  .photo,
-  .video {
-    height: 230px;
-    width: 230px;
+    max-width: 300px;
+    margin: 0;
   }
   .content {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-width: 0;
+    width: 100%;
+    max-width: 430px;
+    padding: 1rem 0;
     text-align: center;
-  }
-  .heading {
-    font-size: 3rem;
-  }
-  .paragraph {
-    margin: 1.5rem 0;
-  }
-}
-
-@media (max-width: 460px) {
-  .hero {
-    height: calc(82vh - 80px);
-  }
-  .photoWrapper {
-    width: 200px;
-    height: 200px;
-  }
-  .photo,
-  .video {
-    height: 200px;
-    width: 200px;
   }
   .heading {
     font-size: 2rem;
   }
   .paragraph {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .wrapper {
+    padding: 1rem 2rem;
+  }
+  .photoWrapper {
+    max-width: 160px;
+  }
+  .content {
+    padding-bottom: 0rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    margin: 1rem 0;
+    font-size: 1rem;
   }
 }
