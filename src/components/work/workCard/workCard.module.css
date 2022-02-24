@@ -48,7 +48,7 @@
     min-width: 0;
     width: 100%;
     max-width: 400px;
-    filter: drop-shadow(0px 20px 30px var(--shadow));
+    filter: drop-shadow(-40px 20px 30px var(--shadow));
   }
   .content {
     width: 100%;
