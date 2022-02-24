@@ -15,23 +15,12 @@
   visibility: hidden;
 }
 
-.button {
-  display: block;
-  text-align: left;
-  border: 1px solid yellow;
-}
-
 @media (max-width: 960px) {
-  .button {
-    text-align: center;
-  }
-  .work {
+  .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .anchor {
-    top: 0px;
+    align-items: center;
   }
 }
 
