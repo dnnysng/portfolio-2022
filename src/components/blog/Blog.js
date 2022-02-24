@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import style from './Blog.module.css'
 import Button from '../button/Button'
 
-import Card from '../card/Card'
+import Card from './blogCard/blogCard'
 
 const LatestUpdates = () => {
 
@@ -33,24 +33,26 @@ const LatestUpdates = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <div className={style.wrapper}>
-        <Button
-          variant="transparent"
-          href="#latestUpdates"
-          label="latest updates"
-        />
-        <p id="latestUpdates" className="anchor"></p>
-        <div className={style.cards}>
-          {posts.map(post => <Card
-            key={post.title}
-            title={post.title}
-            date={post.pubDate}
-            thumbnail={post.thumbnail}
-            description={post.description}
-            link={post.link}
-          />)}
+      <section className={style.block}>
+        <div className={style.wrapper}>
+          <Button
+            variant="transparent"
+            href="#latestUpdates"
+            label="latest updates"
+          />
+          <p id="latestUpdates" className={style.anchor}></p>
+          <div className={style.cards}>
+            {posts.map(post => <Card
+              key={post.title}
+              title={post.title}
+              date={post.pubDate}
+              thumbnail={post.thumbnail}
+              description={post.description}
+              link={post.link}
+            />)}
+          </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

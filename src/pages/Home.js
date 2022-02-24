@@ -17,7 +17,7 @@ const home = (props) => {
             // page slides down with an open menu
             className={`
                 ${style.base}
-                ${props.menu && style.slideDown}
+                ${props.menu && style.hidden}
                 ${props.dark ? theme.darkTheme : theme.lightTheme}
             `}>
             <Hero />

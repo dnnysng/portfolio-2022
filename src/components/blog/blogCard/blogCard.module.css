@@ -55,6 +55,7 @@
 }
 
 .excerpt {
+  color: #343434;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -71,22 +72,22 @@
 }
 
 .date,
-.views {
+.more {
   margin: 0;
   font-size: 0.9rem;
+  color: #202020;
 }
 
-.views {
-  color: var(--text);
+.more {
   transition: 0.3s all ease-in-out;
 }
 
-.views:hover {
+.more:hover {
   color: var(--primary);
   transform: scale(0.9);
 }
 
-.views::before {
+.more::before {
   color: var(--primary);
   content: '>> ';
 }

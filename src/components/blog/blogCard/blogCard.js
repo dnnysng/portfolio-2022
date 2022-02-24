@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Card.module.css'
+import style from './blogCard.module.css'
 import sanitizeHtml from 'sanitize-html'
 
 const Card = (props) => {
@@ -30,7 +30,7 @@ const Card = (props) => {
         <p className={style.excerpt}>{cleanHtml}</p>
         <div className={style.footer}>
           <p className={style.date}>{date}</p>
-          <a className={style.views} href={props.link} target="blank_">Read More</a>
+          <a className={style.more} href={props.link} target="blank_">Read More</a>
         </div>
       </div>
     </div>
