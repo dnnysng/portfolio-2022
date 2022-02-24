@@ -1,12 +1,10 @@
 .block {
   width: 100%;
-  border: 1px solid white;
 }
 
 .wrapper {
-  padding: 2rem;
+  padding: 0rem 2rem 2rem 2rem;
   overflow-x: hidden;
-  border: 5px solid red;
 }
 
 .anchor {

@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   padding: 8rem 0;
-  border: 2px solid blue;
 }
 
 .wrapper:nth-of-type(even) {
@@ -15,15 +14,10 @@
   min-width: 460px;
   width: 100%;
   filter: drop-shadow(40px 20px 30px var(--shadow));
-  border: 2px solid yellow;
 }
 
 .wrapper:nth-child(even) .thumbnail {
   filter: drop-shadow(-40px 20px 30px var(--shadow));
-}
-
-.content {
-  border: 2px solid green;
 }
 
 .title {
