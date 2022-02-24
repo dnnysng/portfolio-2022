@@ -1,9 +1,6 @@
-.footer {
+.block {
   width: 100%;
   border-top: 1px solid var(--line);
-  height: 100px;
-  display: grid;
-  place-items: center;
 }
 
 .wrapper {
@@ -12,30 +9,22 @@
   align-items: center;
   width: 100%;
   color: var(--text);
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 .socialWrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
-  margin-right: -10px;
-}
-
-.socialWrapper * {
-  margin: 5px 0 0 5px;
+  margin-bottom: -8px;
 }
 
 @media (max-width: 560px) {
-  .footer {
-    height: max-content;
-  }
   .wrapper {
     flex-direction: column;
-    padding-top: 2rem;
+    padding: 2rem;
   }
   .socialWrapper {
-    padding: 1rem 0;
-    margin: 0;
+    padding: 1rem;
   }
   .socialWrapper * {
     margin: 0 5px;

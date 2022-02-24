@@ -14,7 +14,7 @@ const Footer = () => {
   const year = date.getFullYear()
 
   return (
-    <footer className={style.footer}>
+    <footer className={style.block}>
       <div className={style.wrapper}>
         <div className={style.copyright}>Made by Danny Seng - Copyright {year}</div>
         <div className={style.socialWrapper}>
