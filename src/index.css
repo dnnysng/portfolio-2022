@@ -23,7 +23,11 @@ html {
 body {
   color: white;
   margin: 0;
-  font-family: 'Titillium', sans-serif;
+  font-family: 'Titillium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -42,6 +46,7 @@ h6 {
 
 a {
   text-decoration: none;
+  color: var(--light);
 }
 
 a,
