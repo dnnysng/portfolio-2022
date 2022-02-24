@@ -1,32 +1,29 @@
-.projectWrapper {
+.wrapper {
   display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 8.5rem 0;
+  padding: 8rem 0;
+  border: 2px solid blue;
 }
 
-.wrapper:nth-child(even) .projectWrapper {
+.wrapper:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
 .thumbnail {
-  width: 60%;
-  max-width: 700px;
-  margin-left: -2rem;
+  min-width: 460px;
+  width: 100%;
   filter: drop-shadow(40px 20px 30px var(--shadow));
+  border: 2px solid yellow;
 }
 
 .wrapper:nth-child(even) .thumbnail {
-  margin-right: -2rem;
   filter: drop-shadow(-40px 20px 30px var(--shadow));
 }
 
 .content {
-  width: 50%;
-  max-width: 400px;
+  border: 2px solid green;
 }
 
 .title {
@@ -37,66 +34,62 @@
 .description {
   color: var(--text);
   margin: 1rem 0 2rem 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .button {
   margin-right: 1rem;
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 @media (max-width: 960px) {
-  .wrapper {
+  .wrapper,
+  .wrapper:nth-of-type(2) {
     padding-top: 7rem;
-  }
-  .wrapper:nth-child(even) .projectWrapper {
+    display: flex;
     flex-direction: column;
-  }
-  .projectWrapper {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
   }
   .thumbnail,
   .wrapper:nth-child(even) .thumbnail {
+    min-width: 0;
     width: 100%;
-    margin: 0;
-    max-width: 100%;
-    z-index: 1;
+    max-width: 400px;
     filter: drop-shadow(0px 20px 30px var(--shadow));
   }
-
   .content {
     width: 100%;
-    max-width: 100%;
-    text-align: left;
-    padding: 4rem 0 3rem 0;
-    margin-top: -1rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.5rem;
   }
   .description {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .button {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
-@media (max-width: 560px) {
-  .title {
-    font-size: 1.8rem;
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 1rem 0;
   }
   .thumbnail,
   .wrapper:nth-child(even) .thumbnail {
-    width: 90%;
-    max-width: 90%;
-    filter: drop-shadow(0px 15px 20px var(--shadow));
+    min-width: 0;
+    width: 200%;
+    margin-left: 75%;
+    max-width: none;
   }
   .content {
-    margin-top: -3rem;
-    text-align: center;
+    text-align: left;
+  }
+  .title {
+    font-size: 2rem;
   }
   .description {
-    font-size: 1.3rem;
-    text-align: center;
+    font-size: 1.1rem;
   }
 }

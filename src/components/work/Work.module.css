@@ -5,6 +5,7 @@
 
 .wrapper {
   padding: 2rem;
+  overflow-x: hidden;
   border: 5px solid red;
 }
 
