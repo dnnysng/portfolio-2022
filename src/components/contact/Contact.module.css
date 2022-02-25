@@ -23,7 +23,7 @@
 
 @media (max-width: 460px) {
   .wrapper {
-    padding: 8rem 0;
+    padding: 8rem 2rem;
   }
   .title {
     font-size: 3rem;
