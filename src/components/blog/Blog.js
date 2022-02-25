@@ -11,7 +11,7 @@ const LatestUpdates = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.medium.com%2Ffeed%2F%40dannyseng&api_key=r0xpcslhqezp8mcrrgg8meveoeyzvmjyxpq6hds3&order_dir=desc&count=6")
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.medium.com%2Ffeed%2F%40dannyseng&api_key=r0xpcslhqezp8mcrrgg8meveoeyzvmjyxpq6hds3&order_dir=desc&count=3")
       .then(res => res.json())
       .then(
         (result) => {
