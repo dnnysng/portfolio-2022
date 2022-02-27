@@ -12,7 +12,7 @@ import Home from './pages/Home'
 
 function App() {
 
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
