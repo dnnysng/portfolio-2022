@@ -15,7 +15,7 @@
 }
 
 .content {
-  padding: 5rem 0rem;
+  padding: 7rem 0rem;
   width: 100%;
   max-width: 650px;
   text-align: center;
@@ -37,7 +37,7 @@
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
-    padding: 2rem;
+    padding: 5rem;
   }
   .content {
     min-width: 0;
@@ -56,16 +56,16 @@
 
 @media (max-width: 460px) {
   .wrapper {
-    padding: 1rem 2rem;
+    padding: 6.3rem 2rem;
   }
   .content {
     padding-bottom: 0rem;
   }
   .heading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .paragraph {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     font-size: 1rem;
   }
 }
