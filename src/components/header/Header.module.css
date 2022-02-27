@@ -75,7 +75,7 @@
   display: none;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 720px) {
   .hamburger {
     display: block;
     stroke: var(--foreground);

@@ -38,6 +38,7 @@ const Header = (props) => {
                 <nav className={style.nav}>
                     <button className={style.link} onClick={scrollToTop}>Home</button>
                     <a className={style.link} href='#work'>Work</a>
+                    <a className={style.link} href='#latestUpdates'>Blog</a>
                     <a className={style.link} href='#contact'>Contact</a>
                 </nav>
                 <Sun
@@ -62,6 +63,7 @@ const Header = (props) => {
                             className={style.menu}>
                             <button className={style.link} onClick={scrollToTop}>Home</button>
                             <a className={style.link} onClick={toggleMenu} href='#work'>Work</a>
+                            <a className={style.link} onClick={toggleMenu} href='#latestUpdates'>Blog</a>
                             <a className={style.link} onClick={toggleMenu} href='#contact'>Contact</a>
                         </motion.nav>
                     )}

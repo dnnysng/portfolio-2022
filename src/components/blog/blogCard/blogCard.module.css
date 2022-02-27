@@ -14,7 +14,6 @@
   object-position: top;
   z-index: 0;
   border-bottom: 5px solid var(--primary);
-  border-left: 1rem solid var(--primary);
   transition: 0.3s all ease-in-out;
 }
 
@@ -29,7 +28,6 @@
   color: var(--bg);
   padding: 1.5rem 1.5rem 0 1.5rem;
   z-index: 1;
-  border-right: 1rem solid var(--primary);
 }
 
 .content *:not(.footer) {
