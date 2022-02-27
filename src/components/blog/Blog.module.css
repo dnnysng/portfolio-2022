@@ -4,6 +4,9 @@
 
 .wrapper {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards {
@@ -23,9 +26,6 @@
 @media (max-width: 960px) {
   .wrapper {
     margin-top: 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .cards {
     grid-template-columns: 1fr 1fr;

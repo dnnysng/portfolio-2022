@@ -5,6 +5,10 @@
 .wrapper {
   padding: 1rem 2rem 2rem 2rem;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .anchor {
@@ -15,12 +19,6 @@
 }
 
 @media (max-width: 960px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .anchor {
     display: block;
     position: relative;
