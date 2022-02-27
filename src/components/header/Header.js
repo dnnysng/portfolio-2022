@@ -34,7 +34,9 @@ const Header = (props) => {
     return (
         <header className={`${style.block} ${props.dark ? theme.darkTheme : theme.lightTheme}`}>
             <div className={style.wrapper}>
-                <h3 onClick={scrollToTop} className={style.logo}>Danny Seng</h3>
+                <div className={style.logoWrapper}>
+                    <h3 onClick={scrollToTop} className={style.logo}>Danny Seng</h3>
+                </div>
                 <nav className={style.nav}>
                     <button className={style.link} onClick={scrollToTop}>Home</button>
                     <a className={style.link} href='#work'>Work</a>
