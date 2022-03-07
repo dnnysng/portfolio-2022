@@ -20,9 +20,28 @@
   filter: drop-shadow(-40px 20px 30px var(--shadow));
 }
 
+.content {
+  max-width: 500px;
+}
+
 .title {
   font-size: 3rem;
   color: var(--foreground);
+}
+
+.tagWrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  color: var(--text);
+  background: var(--tag);
+  padding: 0.1rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .description {
@@ -37,8 +56,11 @@
 }
 
 @media (max-width: 960px) {
+  .tagWrapper {
+    justify-content: center;
+  }
   .wrapper,
-  .wrapper:nth-of-type(2) {
+  .wrapper:nth-of-type(even) {
     padding-top: 7rem;
     display: flex;
     flex-direction: column;
@@ -67,6 +89,9 @@
 }
 
 @media (max-width: 500px) {
+  .tagWrapper {
+    justify-content: left;
+  }
   .wrapper {
     padding: 1rem 0;
   }
@@ -85,5 +110,8 @@
   }
   .description {
     font-size: 1.1rem;
+  }
+  .button {
+    font-size: 1rem;
   }
 }

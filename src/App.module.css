@@ -3,8 +3,9 @@
   --foreground: #202020;
   --line: #67676733;
   --text: #343434;
-  --primary: crimson;
+  --primary: #dc143c;
   --shadow: #00000040;
+  --tag: #20202020;
 }
 
 .darkTheme {
@@ -12,8 +13,9 @@
   --foreground: #fafafa;
   --line: #95959533;
   --text: #bcbcbc;
-  --primary: crimson;
+  --primary: #dc143c;
   --shadow: #00000055;
+  --tag: #ededed22;
 }
 
 .wrapper {

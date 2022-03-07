@@ -48,7 +48,6 @@
   font-size: 1rem;
   margin-left: 3rem;
   color: var(--foreground);
-  transition: 0.3s all ease-in-out;
   background: none;
   border: none;
 }
@@ -56,6 +55,11 @@
 .nav .link:hover {
   color: var(--primary);
   cursor: pointer;
+}
+
+.nav .link:hover::before {
+  content: '>> ';
+  margin-left: -20px;
 }
 
 .sun {
