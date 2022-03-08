@@ -7,8 +7,19 @@ const Contact = () => {
     <section id="contact" className={style.block}>
       <div className={style.wrapper}>
         <h1 className={style.title}>Contact Me</h1>
-        <p className={style.paragraph}>I'm an experienced <strong>frontend developer</strong> available for hire. Let's talk!</p>
-        <Button variant="cta" label="Email me at danny.s.seng@gmail.com" href="mailto:danny.s.seng@gmail.com" />
+        <form className={style.form} name="contact" method="post" data-netlify="true">
+          <label className={style.label} for="name">Name</label>
+          <input className={style.inputText} type="text" name="name" placeholder="Your name.." />
+          <label className={style.label} for="email">Email</label>
+          <input className={style.inputText} type="email" name="email" placeholder="Your email.." />
+          <label className={style.label} for="message">Message</label>
+          <textarea
+            className={style.inputTextArea}
+            name="message"
+            placeholder="Write message.."
+          ></textarea>
+          <input className={style.inputSubmit} type="submit" value=">> Send Message" />
+        </form>
       </div>
     </section>
   )

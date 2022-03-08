@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 14rem 2rem;
+  padding: 7rem 2rem;
 }
 
 .title {
@@ -21,9 +21,56 @@
   margin: 2rem 0;
 }
 
+.form {
+  font-family: 'Titillium', sans-serif;
+  max-width: 500px;
+  text-align: left;
+}
+
+.label {
+  font-family: 'Titillium', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.inputText,
+.inputTextArea {
+  font-family: 'Titillium', sans-serif;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.inputTextArea {
+  height: 100px;
+}
+
+.inputSubmit {
+  font-family: 'Titillium', sans-serif;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1rem 2rem;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+
+.inputSubmit:hover {
+  transform: scale(0.9);
+}
+
 @media (max-width: 460px) {
   .wrapper {
-    padding: 8rem 2rem;
+    height: calc(100vh - 161px);
+    display: flex;
+    justify-content: center;
   }
   .title {
     font-size: 3rem;
