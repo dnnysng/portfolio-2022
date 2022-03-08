@@ -68,9 +68,7 @@
 
 @media (max-width: 460px) {
   .wrapper {
-    height: calc(100vh - 161px);
-    display: flex;
-    justify-content: center;
+    padding: 2rem;
   }
   .title {
     font-size: 3rem;
