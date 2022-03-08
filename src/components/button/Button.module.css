@@ -35,7 +35,7 @@
   text-transform: uppercase;
   padding: 0;
   border: none;
-  z-index: 99;
+  z-index: 1;
 }
 
 .transparent::before {
