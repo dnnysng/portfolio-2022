@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Contact.module.css'
-import Button from '../button/Button'
 
 const Contact = () => {
   return (
