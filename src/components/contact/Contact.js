@@ -7,6 +7,7 @@ const Contact = () => {
       <div className={style.wrapper}>
         <h1 className={style.title}>Contact Me</h1>
         <form className={style.form} name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <label className={style.label} for="name">Name</label>
           <input className={style.inputText} type="text" name="name" placeholder="Your name.." />
           <label className={style.label} for="email">Email</label>
