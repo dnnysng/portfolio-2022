@@ -8,8 +8,9 @@
   align-items: center;
   z-index: 99;
   transition: 0.5s all ease-in-out;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
   border-bottom: 1px solid var(--line);
+  background-color: var(--bg-50);
 }
 
 .wrapper {
