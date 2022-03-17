@@ -1,23 +1,26 @@
-.wrapper {
+.container {
   width: 100%;
   overflow: hidden;
   height: max-content;
   filter: drop-shadow(10px 20px 20px var(--shadow));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.thumbnail {
+.imageWrapper {
   height: 200px;
-  width: 100%;
-  margin: 0;
-  margin-bottom: -7px;
-  object-fit: cover;
-  object-position: top;
-  z-index: 0;
-  border-bottom: 5px solid var(--primary);
-  transition: 0.3s all ease-in-out;
 }
 
-.thumbnail:hover {
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 5px solid var(--primary);
+}
+
+.image:hover {
   cursor: pointer;
 }
 
@@ -70,22 +73,22 @@
 }
 
 .date,
-.more {
+.readMore {
   margin: 0;
   font-size: 0.9rem;
   color: #202020;
 }
 
-.more {
+.readMore {
   transition: 0.3s all ease-in-out;
 }
 
-.more:hover {
+.readMore:hover {
   color: var(--primary);
   transform: scale(0.9);
 }
 
-.more::before {
+.readMore::before {
   color: var(--primary);
   content: '>> ';
 }

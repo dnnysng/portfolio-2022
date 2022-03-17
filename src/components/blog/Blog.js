@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import style from './Blog.module.css'
 import Button from '../button/Button'
 
-import Card from './blogCard/blogCard'
+import Card from './blog-card/BlogCard'
 
 const LatestUpdates = () => {
 
