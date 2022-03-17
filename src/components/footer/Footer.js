@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Footer.module.css'
-import Button from '../button/Button'
 
 // social icons
 import { ReactComponent as Medium } from '../../assets/icons/medium.svg'
