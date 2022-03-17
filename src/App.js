@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import LoadSpinner from './components/loadSpinner/LoadSpinner'
 import { motion } from "framer-motion"
 
@@ -13,9 +13,18 @@ import Footer from './components/footer/Footer'
 
 function App() {
 
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const rawData = localStorage.getItem("isDark");
+    if (rawData) setIsDark(JSON.parse(rawData))
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("isDark", JSON.stringify(isDark))
+  }, [isDark])
 
   // callback to get theme state from header
   const darkCheck = (isDarkTheme) => {
