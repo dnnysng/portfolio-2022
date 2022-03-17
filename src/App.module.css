@@ -1,6 +1,6 @@
 .lightTheme {
   --bg: #ededed;
-  --bg-50: #ededed99;
+  --bg-50: #edededee;
   --foreground: #202020;
   --line: #67676733;
   --text: #343434;
@@ -11,7 +11,7 @@
 
 .darkTheme {
   --bg: #202020;
-  --bg-50: #20202099;
+  --bg-50: #202020ee;
   --foreground: #fafafa;
   --line: #95959533;
   --text: #bcbcbc;
