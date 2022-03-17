@@ -81,6 +81,7 @@ const Work = () => {
             code={project.code}
             cardVariant={project.cardVariant}
             tech={project.tech}
+            key={project.description}
           />
         )}
       </div>

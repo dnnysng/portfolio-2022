@@ -38,4 +38,5 @@
 
 .loaderWrapper {
   transition: 0.3s all ease-in-out;
+  z-index: 1;
 }

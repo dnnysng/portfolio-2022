@@ -1,7 +1,7 @@
 import style from './workCard.module.css'
 import Button from '../../button/Button'
 
-const workCard = ({ image, title, description, live, github, code, cardVariant, tech }) => {
+const WorkCard = ({ image, title, description, live, github, code, cardVariant, tech }) => {
   return (
     <div className={`${style.wrapper} ${cardVariant}`}>
       <img
@@ -19,11 +19,10 @@ const workCard = ({ image, title, description, live, github, code, cardVariant, 
         <p className={style.description}>{description}</p>
         <Button className={style.button} variant="cta" label="View Live" href={live} />
         {github && <Button className={style.button} variant="secondary" label="Github" href={github} />}
-        {console.log(code)}
         {code && <Button className={style.button} variant="secondary" label="Sample Code" href={code} />}
       </div>
     </div>
   )
 }
 
-export default workCard
+export default WorkCard
