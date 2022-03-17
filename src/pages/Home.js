@@ -13,10 +13,8 @@ import theme from '../App.module.css'
 const home = (props) => {
     return (
         <div
-            // page slides down with an open menu
             className={`
                 ${style.base}
-                ${props.menu && style.hidden}
                 ${props.dark ? theme.darkTheme : theme.lightTheme}
             `}>
             <Hero />

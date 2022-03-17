@@ -18,21 +18,9 @@ const Footer = () => {
       <div className={style.wrapper}>
         <div className={style.copyright}>Made by Danny Seng - Copyright {year}</div>
         <div className={style.socialWrapper}>
-          <Button
-            variant="social"
-            label={<Medium />}
-            href="https://medium.com/@dannyseng"
-            target="blank_" />
-          <Button
-            variant="social"
-            label={<Linkedin />}
-            href="https://www.linkedin.com/in/dannyseng/"
-            target="blank_" />
-          <Button
-            variant="social"
-            label={<Github />}
-            href="http://www.github.com/dnnysng"
-            target="blank_" />
+          <a className={style.social} href="https://medium.com/@dannyseng" target="blank_"><Medium /></a>
+          <a className={style.social} href="https://www.linkedin.com/in/dannyseng/" target="blank_"><Linkedin /></a>
+          <a className={style.social} href="http://www.github.com/dnnysng" target="blank_"><Github /></a>
         </div>
       </div>
     </footer>

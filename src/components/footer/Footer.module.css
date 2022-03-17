@@ -16,18 +16,35 @@
 .socialWrapper {
   display: flex;
   align-items: center;
-  margin-bottom: -8px;
+  gap: 0.5rem;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+}
+
+.social svg {
+  fill: var(--text);
+}
+
+.social svg:hover {
+  fill: var(--primary);
+  cursor: pointer;
 }
 
 @media (max-width: 560px) {
   .wrapper {
     flex-direction: column;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
   }
   .socialWrapper {
     padding: 1rem;
-  }
-  .socialWrapper * {
-    margin: 0 5px;
   }
 }

@@ -5,8 +5,3 @@
   align-items: center;
   transition: 0.3s all ease-in-out;
 }
-
-.hidden {
-  opacity: 30%;
-  filter: grayscale(50%) blur(5px);
-}

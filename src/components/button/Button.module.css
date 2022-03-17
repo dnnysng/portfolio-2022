@@ -16,6 +16,7 @@
   background-color: var(--primary);
   border: 1px solid var(--primary);
   color: #fafafa;
+  margin-right: 1rem;
 }
 
 .cta::before {
@@ -49,34 +50,4 @@
 
 .transparent:hover {
   transform: scale(1);
-}
-
-.social {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social:hover {
-  transform: none;
-}
-
-.social svg {
-  fill: var(--text);
-  width: 50px;
-  height: 50px;
-  padding: 1rem;
-}
-
-.social svg:hover {
-  fill: var(--primary);
-}
-
-@media (max-width: 560px) {
-  .cta {
-    padding: 1rem;
-  }
-  .social svg {
-    padding: 0.8rem;
-  }
 }

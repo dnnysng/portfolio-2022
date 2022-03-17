@@ -81,6 +81,7 @@
     display: block;
     stroke: var(--foreground);
     margin-left: 2rem;
+    transition: 2s all ease-in-out;
   }
   .hamburger:hover {
     cursor: pointer;
@@ -90,22 +91,30 @@
   }
   .menu {
     width: 100%;
-    position: fixed;
-    top: 65px;
+    position: absolute;
+    top: 61.5px;
     left: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
-    background: var(--foreground);
-    border-bottom: 5px solid var(--primary);
+    min-height: calc(100vh - 61.5px);
+    background-color: var(--bg);
+    gap: 2rem;
+    padding: 2rem;
+    transition: 2s background-color ease-in-out;
   }
   .menu .link {
-    padding: 1rem 4rem;
-    background-color: var(--foreground);
     text-align: left;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--bg);
+    color: var(--foreground);
     border: none;
+    transition: 2s all ease-in-out;
+    background: none;
+    border: 1px solid var(--foreground);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
   }
 }

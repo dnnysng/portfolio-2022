@@ -49,20 +49,25 @@ const Header = (props) => {
                 <AnimatePresence>
                     {open && (
                         <motion.nav
-                            // mobile menu animation
                             initial={{
-                                height: 0,
+                                y: '100vh'
                             }}
                             animate={{
-                                height: 'max-content',
-                            }}
-                            transition={{
-                                ease: "easeInOut",
+                                y: 0,
+                                transition: {
+                                    ease: "easeInOut",
+                                    duration: .5,
+                                }
                             }}
                             exit={{
-                                height: 0,
+                                y: '100vh',
+                                transition: {
+                                    ease: "easeInOut",
+                                    duration: .5,
+                                }
                             }}
-                            className={style.menu}>
+                            className={style.menu}
+                        >
                             <button className={style.link} onClick={scrollToTop}>Home</button>
                             <a className={style.link} onClick={toggleMenu} href='#work'>Work</a>
                             <a className={style.link} onClick={toggleMenu} href='#latestUpdates'>Blog</a>

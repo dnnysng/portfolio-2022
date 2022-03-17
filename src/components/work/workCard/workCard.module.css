@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .wrapper:nth-of-type(even) {
