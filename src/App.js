@@ -13,7 +13,7 @@ import Footer from './components/footer/Footer'
 
 function App() {
 
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -44,7 +44,7 @@ function App() {
       ${isDark ? style.darkTheme : style.lightTheme}
     `}>
       <motion.div className={`${style.loaderWrapper}`} animate={loading ? "vis" : "invis"} variants={variants}>
-        <LoadSpinner />
+        <LoadSpinner isDark={isDark} />
       </motion.div>
       <motion.div className={style.contentWrapper} animate={loading ? "out" : "in"} variants={variants}>
         <Header callback={{ darkCheck, menuCheck }} dark={isDark} menu={isMenuOpen} />

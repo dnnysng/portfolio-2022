@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #202020;
+  background-color: var(--bg);
   z-index: 999;
 }
 
@@ -18,7 +18,7 @@
 }
 .ldsRipple div {
   position: absolute;
-  border: 1px solid white;
+  border: 1px solid var(--foreground);
   opacity: 1;
   border-radius: 50%;
   animation: ldsRipple 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
