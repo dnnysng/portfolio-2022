@@ -13,6 +13,7 @@
 .title {
   font-size: 4rem;
   color: var(--foreground);
+  margin-bottom: 1rem;
 }
 
 .paragraph {
@@ -28,21 +29,24 @@
 }
 
 .label {
-  font-family: 'Titillium', sans-serif;
-  font-size: 0.8rem;
-  color: var(--text);
+  display: none;
 }
 
 .inputText,
 .inputTextArea {
   font-family: 'Titillium', sans-serif;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border: none;
   background-color: #ffffff;
   box-sizing: border-box;
   margin-bottom: 1rem;
   font-size: 1rem;
+}
+
+.inputText:focus,
+.inputTextArea:focus {
+  outline: 2px solid var(--primary);
 }
 
 .inputTextArea {
