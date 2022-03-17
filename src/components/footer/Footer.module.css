@@ -10,6 +10,7 @@
   width: 100%;
   color: var(--text);
   padding: 1rem 1rem 1rem 2rem;
+  max-width: 1440px;
 }
 
 .socialWrapper {

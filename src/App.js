@@ -9,6 +9,7 @@ import style from './App.module.css'
 // pages
 import Header from './components/header/Header'
 import Home from './pages/Home'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
       <motion.div className={style.contentWrapper} animate={loading ? "out" : "in"} variants={variants}>
         <Header callback={{ darkCheck, menuCheck }} dark={isDark} menu={isMenuOpen} />
         <Home menu={isMenuOpen} dark={isDark} />
+        <Footer />
       </motion.div>
     </div>
   );
