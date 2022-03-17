@@ -36,6 +36,7 @@
   padding: 0;
   border: none;
   z-index: 1;
+  transition: 2s color ease-in-out;
 }
 
 .transparent::before {
@@ -47,7 +48,7 @@
 }
 
 .transparent:hover {
-  color: var(--primary);
+  transform: scale(1);
 }
 
 .social {

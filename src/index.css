@@ -42,6 +42,7 @@ h4,
 h5,
 h6 {
   font-family: 'Alata', sans-serif;
+  transition: 2s color ease-in-out;
 }
 
 a {
@@ -53,4 +54,5 @@ a,
 p,
 button {
   font-family: 'Titillium', sans-serif;
+  transition: 2s color ease-in-out;
 }
