@@ -1,5 +1,13 @@
 .block {
   width: 100%;
+  min-height: calc(100vh - 141px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testButton {
+  width: 100%;
 }
 
 .container {
