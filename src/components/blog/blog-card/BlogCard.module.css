@@ -45,7 +45,7 @@
   -webkit-box-orient: vertical;
   flex-grow: 1;
   font-family: 'Alata', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   transition: 0.3s all ease-in-out;
 }
@@ -91,4 +91,10 @@
 .readMore::before {
   color: var(--primary);
   content: '>> ';
+}
+
+@media (max-width: 1080px) {
+  .title {
+    font-size: 1.3rem;
+  }
 }
