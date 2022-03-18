@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.wrapper {
+.container {
   padding: 1rem 2rem 2rem 2rem;
   overflow-x: hidden;
   display: flex;

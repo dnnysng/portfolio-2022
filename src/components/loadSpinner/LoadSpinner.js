@@ -1,7 +1,6 @@
-import React from 'react'
 import style from './LoadSpinner.module.css'
 
-const LoadSpinner = () => {
+export default function LoadSpinner() {
   return (
     <div className={style.bg}>
       <div className={style.ldsRipple}>
@@ -11,5 +10,3 @@ const LoadSpinner = () => {
     </div>
   )
 }
-
-export default LoadSpinner

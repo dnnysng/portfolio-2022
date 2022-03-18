@@ -3,7 +3,7 @@
   border-top: 1px solid var(--line);
 }
 
-.wrapper {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   max-width: 1440px;
 }
 
-.socialWrapper {
+.socialContainer {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -38,13 +38,13 @@
 }
 
 @media (max-width: 560px) {
-  .wrapper {
+  .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 2rem 0 2rem;
   }
-  .socialWrapper {
+  .socialContainer {
     padding: 1rem;
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './Work.module.css'
 
-import Button from '../button/Button'
-import Card from './workCard/workCard'
+import LinkButton from '../link-button/LinkButton'
+import Card from './work-card/WorkCard'
 
 import quicktrailer from '../../assets/images/quicktrailers-mockup-min.png'
 import afexpress from '../../assets/images/afexpress-mockup-min.png'
@@ -21,10 +21,13 @@ const Work = () => {
       "tech": [
         "React",
         "Router",
+        "Context",
         "Framer Motion",
         "Crypto",
+        "Blockchain",
         "Solana",
-        "NFT"]
+        "NFT"
+      ]
     },
     {
       "image": vl,
@@ -32,14 +35,16 @@ const Work = () => {
       "tech": ["WordPress", "LearnDash LMS", "Woocommerce", "Elementor Pro"],
       "description": "I learned a lot during this project and was the lead in both design and development. Main features include a learning management system, a group dashboard, Woocommerce & CRM integration.",
       "live": "https://www.virtuallearnonline.com",
-      "code": "https://codepen.io/dnnysng/pen/zYwpgpL",
+      "link": "https://codepen.io/dnnysng/pen/zYwpgpL",
+      "linkType": "Sample Code"
     },
     {
       "image": quicktrailer,
       "title": "Quick Trailers",
       "description": "This react web application is connected to The Movie Database API and provides users with quick access to movie trailers by name. Results are displayed in a grid with the movie title and rating at a glance.",
       "live": "https://thirsty-boyd-4fd3cf.netlify.app/",
-      "github": "https://github.com/dnnysng/quick-trailers",
+      "link": "https://github.com/dnnysng/quick-trailers",
+      "linkType": "Github",
       "tech": ["React", "Rest API", "TheMovieDB"]
     },
     // {
@@ -63,8 +68,8 @@ const Work = () => {
 
   return (
     <section className={style.block}>
-      <div className={style.wrapper}>
-        <Button
+      <div className={style.container}>
+        <LinkButton
           className={style.button}
           variant="transparent"
           href="#work"
@@ -77,8 +82,8 @@ const Work = () => {
             title={project.title}
             description={project.description}
             live={project.live}
-            github={project.github}
-            code={project.code}
+            link={project.link}
+            linkType={project.linkType}
             cardVariant={project.cardVariant}
             tech={project.tech}
             key={project.description}

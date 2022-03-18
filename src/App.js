@@ -1,62 +1,65 @@
 import { useState, useEffect } from 'react'
-import LoadSpinner from './components/loadSpinner/LoadSpinner'
 import { motion } from "framer-motion"
 
+import LoadSpinner from './components/loadSpinner/LoadSpinner'
 
-// contains theme color variables
-import style from './App.module.css'
-
-// pages
 import Header from './components/header/Header'
 import Home from './pages/Home'
 import Footer from './components/footer/Footer'
 
-function App() {
+import style from './App.module.css'
+
+export default function App() {
 
   const [isDark, setIsDark] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  // get local preference for theme
   useEffect(() => {
     const rawData = localStorage.getItem("isDark");
     if (rawData) setIsDark(JSON.parse(rawData))
   }, [])
 
+  // set local preference for theme on theme change
   useEffect(() => {
     localStorage.setItem("isDark", JSON.stringify(isDark))
   }, [isDark])
 
+  // time for loader animation to run
   setTimeout(() => {
     setLoading(false);
   }, 3000)
 
   const variants = {
-    vis: { opacity: 1 },
-    invis: { opacity: 0, "z-index": -1 },
-    in: { opacity: 1 },
-    out: { opacity: 0 }
+    show: { opacity: 1 },
+    hide: {
+      opacity: 0,
+      "z-index": -1
+    }
   }
 
   return (
-    <div className={`
-      ${style.wrapper}
-      ${isDark ? style.darkTheme : style.lightTheme}
-    `}>
-      <motion.div className={`${style.loaderWrapper}`} animate={loading ? "vis" : "invis"} variants={variants}>
+    <div className={`${style.container} ${isDark ? "dark" : "light"}`}>
+      <motion.div
+        className={`${style.loaderWrapper}`}
+        variants={variants}
+        animate={loading ? "show" : "hide"}
+      >
         <LoadSpinner />
       </motion.div>
-      <motion.div className={style.contentWrapper} animate={loading ? "out" : "in"} variants={variants}>
-        <Header
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          isDark={isDark}
-          setIsDark={setIsDark}
-        />
-        <Home menu={isMenuOpen} />
-        <Footer />
-      </motion.div>
+      {!loading &&
+        <>
+          <Header
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+            isDark={isDark}
+            setIsDark={setIsDark}
+          />
+          <Home menu={isMenuOpen} />
+          <Footer />
+        </>
+      }
     </div>
   );
 }
-
-export default App;
