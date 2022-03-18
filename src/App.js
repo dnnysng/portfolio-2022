@@ -31,7 +31,7 @@ export default function App() {
   }, 4000)
 
   return (
-    <div className={`${style.container} ${isDark ? "dark" : "light"}`}>
+    <div className={`${style.container} ${isDark ? "dark" : "light"} ${loading && style.noScroll}`}>
       {loading && <LoadSpinner />}
       <Header
         isMenuOpen={isMenuOpen}
