@@ -32,15 +32,15 @@ export default function Contact() {
           <Form className={style.form}>
             <Field type="hidden" name="form-name" value="contact" />
             <label className={style.label} htmlFor="name">Name</label>
-            <Field className={style.inputText} name="name" type="text" />
+            <Field className={style.inputText} name="name" type="text" placeholder="Your name..." />
             <ErrorMessage className={style.errorMessage} component="span" name="name" />
 
             <label className={style.label} htmlFor="email">Email</label>
-            <Field className={style.inputText} name="email" type="email" />
+            <Field className={style.inputText} name="email" type="email" placeholder="Your email..." />
             <ErrorMessage className={style.errorMessage} component="span" name="email" />
 
             <label className={style.label} htmlFor="message">Message</label>
-            <Field className={style.inputTextArea} name="message" as="textarea" />
+            <Field className={style.inputTextArea} name="message" as="textarea" placeholder="Your message..." />
             <ErrorMessage className={style.errorMessage} component="span" name="message" />
 
             <button className={style.inputSubmit} type="submit">&gt;&gt; Send Message</button>

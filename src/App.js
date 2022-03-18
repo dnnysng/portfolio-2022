@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { motion } from "framer-motion"
 
 import LoadSpinner from './components/loadSpinner/LoadSpinner'
 
@@ -29,37 +28,19 @@ export default function App() {
   // time for loader animation to run
   setTimeout(() => {
     setLoading(false);
-  }, 3000)
-
-  const variants = {
-    show: { opacity: 1 },
-    hide: {
-      opacity: 0,
-      "z-index": -1
-    }
-  }
+  }, 4000)
 
   return (
     <div className={`${style.container} ${isDark ? "dark" : "light"}`}>
-      <motion.div
-        className={`${style.loaderWrapper}`}
-        variants={variants}
-        animate={loading ? "show" : "hide"}
-      >
-        <LoadSpinner />
-      </motion.div>
-      {!loading &&
-        <>
-          <Header
-            isMenuOpen={isMenuOpen}
-            setIsMenuOpen={setIsMenuOpen}
-            isDark={isDark}
-            setIsDark={setIsDark}
-          />
-          <Home menu={isMenuOpen} />
-          <Footer />
-        </>
-      }
+      {loading && <LoadSpinner />}
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        isDark={isDark}
+        setIsDark={setIsDark}
+      />
+      <Home menu={isMenuOpen} />
+      <Footer />
     </div>
   );
 }
