@@ -1,6 +1,7 @@
 .block {
   width: 100%;
   border-top: 1px solid var(--line);
+  transition: 2s all ease-in-out;
 }
 
 .container {
@@ -11,6 +12,10 @@
   color: var(--text);
   padding: 1rem 1rem 1rem 2rem;
   max-width: 1440px;
+}
+
+.copyright {
+  transition: 2s all ease-in-out;
 }
 
 .socialContainer {
@@ -30,6 +35,7 @@
 
 .social svg {
   fill: var(--text);
+  transition: 2s all ease-in-out;
 }
 
 .social svg:hover {

@@ -41,6 +41,10 @@
   margin: 2rem 0;
 }
 
+.button {
+  margin: 0;
+}
+
 @media (max-width: 960px) {
   .container {
     display: flex;
@@ -75,5 +79,8 @@
   .paragraph {
     margin: 1.5rem 0;
     font-size: 1rem;
+  }
+  .button {
+    font-size: 0.9rem;
   }
 }

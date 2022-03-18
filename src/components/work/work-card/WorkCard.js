@@ -10,7 +10,8 @@ export default function WorkCard({
   link,
   linkType,
   cardVariant,
-  tech
+  tech,
+  index
 }) {
   return (
     <article className={`${style.container} ${style[cardVariant]}`}>

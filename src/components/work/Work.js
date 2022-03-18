@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Work.module.css'
 
 import LinkButton from '../link-button/LinkButton'
-import Card from './work-card/WorkCard'
+import WorkCard from './work-card/WorkCard'
 
 import quicktrailer from '../../assets/images/quicktrailers-mockup-min.png'
 import afexpress from '../../assets/images/afexpress-mockup-min.png'
@@ -76,8 +76,8 @@ const Work = () => {
           label="featured work"
         />
         <p id="work" className={style.anchor}></p>
-        {projects.map(project =>
-          <Card
+        {projects.map((project, index) =>
+          <WorkCard
             image={project.image}
             title={project.title}
             description={project.description}
@@ -86,7 +86,8 @@ const Work = () => {
             linkType={project.linkType}
             cardVariant={project.cardVariant}
             tech={project.tech}
-            key={project.description}
+            key={index}
+            index={index}
           />
         )}
       </div>
