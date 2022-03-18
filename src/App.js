@@ -26,16 +26,6 @@ function App() {
     localStorage.setItem("isDark", JSON.stringify(isDark))
   }, [isDark])
 
-  // callback to get theme state from header
-  const darkCheck = (isDarkTheme) => {
-    setIsDark(isDarkTheme)
-  }
-
-  // callback to get menu state from header
-  const menuCheck = (isMenuOpen) => {
-    setIsMenuOpen(isMenuOpen)
-  }
-
   setTimeout(() => {
     setLoading(false);
   }, 3000)
@@ -53,11 +43,16 @@ function App() {
       ${isDark ? style.darkTheme : style.lightTheme}
     `}>
       <motion.div className={`${style.loaderWrapper}`} animate={loading ? "vis" : "invis"} variants={variants}>
-        <LoadSpinner isDark={isDark} />
+        <LoadSpinner />
       </motion.div>
       <motion.div className={style.contentWrapper} animate={loading ? "out" : "in"} variants={variants}>
-        <Header callback={{ darkCheck, menuCheck }} dark={isDark} menu={isMenuOpen} />
-        <Home menu={isMenuOpen} dark={isDark} />
+        <Header
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          isDark={isDark}
+          setIsDark={setIsDark}
+        />
+        <Home menu={isMenuOpen} />
         <Footer />
       </motion.div>
     </div>

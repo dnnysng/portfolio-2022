@@ -5,6 +5,7 @@ import Button from '../button/Button'
 const Hero = (props) => {
     return (
         <section className={style.block}>
+            <p id="hero" className={style.anchor}></p>
             <div className={style.wrapper}>
                 <div className={style.content}>
                     <h1 className={style.heading}>Bringing your visions to life, one pixel at a time.</h1>

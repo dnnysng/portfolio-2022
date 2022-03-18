@@ -2,7 +2,7 @@
   --bg: #ededed;
   --bg-50: #edededee;
   --foreground: #202020;
-  --line: #67676733;
+  --line: #c0c0c0;
   --text: #343434;
   --primary: #dc143c;
   --shadow: #00000040;
@@ -11,9 +11,10 @@
 
 .darkTheme {
   --bg: #202020;
+  --bg-header: #181818;
   --bg-50: #202020ee;
   --foreground: #fafafa;
-  --line: #95959533;
+  --line: #404040;
   --text: #bcbcbc;
   --primary: #dc143c;
   --shadow: #00000055;

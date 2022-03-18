@@ -1,84 +1,35 @@
-import { AnimatePresence, motion, useCycle } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
-// svgs imported as components
+import MobileMenu from './mobile-menu/MobileMenu'
 import { ReactComponent as Hamburger } from '../../assets/icons/hamburger.svg'
 import { ReactComponent as Sun } from '../../assets/icons/sun-shape.svg'
 
-// stylesheets
 import style from './Header.module.css'
-import theme from '../../App.module.css'
 
-const Header = (props) => {
+const Header = ({ isMenuOpen, setIsMenuOpen, isDark, setIsDark }) => {
 
-    const [open, cycleOpen] = useCycle(false, true);
-
-    // toggled by the sun icon and switches dark/light theme
-    const toggleDark = () => {
-        props.callback.darkCheck(!props.dark)
-    }
-
-    // toggled by the hamburger menu based on open state
-    const toggleMenu = () => {
-        cycleOpen()
-        props.callback.menuCheck(!props.menu)
-    }
-
-    // scroll to top
-    const scrollToTop = () => {
-        open && toggleMenu()
-        window.scrollTo({
-            top: 0,
-        });
+    // menu toggle
+    function toggleMenu() {
+        setIsMenuOpen(!isMenuOpen)
     }
 
     return (
-        <header className={`${style.block} ${props.dark ? theme.darkTheme : theme.lightTheme}`}>
-            <div className={style.wrapper}>
+        <header className={style.block}>
+            <div className={style.container}>
                 <div className={style.logoWrapper}>
-                    <h3 onClick={scrollToTop} className={style.logo}>Danny Seng</h3>
+                    <a href="#hero"><h3 className={style.logo}>Danny Seng</h3></a>
                 </div>
                 <nav className={style.nav}>
-                    <button className={style.link} onClick={scrollToTop}>Home</button>
+                    <a className={style.link} href='#hero'>Home</a>
                     <a className={style.link} href='#work'>Work</a>
                     <a className={style.link} href='#latestUpdates'>Blog</a>
                     <a className={style.link} href='#contact'>Contact</a>
                 </nav>
-                <Sun
-                    onClick={toggleDark}
-                    className={style.sun} />
+                <Sun className={style.sun} onClick={() => setIsDark(!isDark)} />
                 <AnimatePresence>
-                    {open && (
-                        <motion.nav
-                            initial={{
-                                y: '100vh'
-                            }}
-                            animate={{
-                                y: 0,
-                                transition: {
-                                    ease: "easeInOut",
-                                    duration: .5,
-                                }
-                            }}
-                            exit={{
-                                y: '100vh',
-                                transition: {
-                                    ease: "easeInOut",
-                                    duration: .5,
-                                }
-                            }}
-                            className={style.menu}
-                        >
-                            <button className={style.link} onClick={scrollToTop}>Home</button>
-                            <a className={style.link} onClick={toggleMenu} href='#work'>Work</a>
-                            <a className={style.link} onClick={toggleMenu} href='#latestUpdates'>Blog</a>
-                            <a className={style.link} onClick={toggleMenu} href='#contact'>Contact</a>
-                        </motion.nav>
-                    )}
+                    {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
                 </AnimatePresence>
-                <Hamburger
-                    onClick={toggleMenu}
-                    className={style.hamburger}
-                />
+                <Hamburger className={style.hamburger} onClick={toggleMenu} />
             </div>
         </header>
     )
