@@ -5,6 +5,13 @@ import style from './Contact.module.css'
 
 export default function Contact() {
 
+  // formats formik data to be used with netlify forms
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   return (
     <section id="contact" className={style.block}>
       <div className={style.container}>
@@ -22,11 +29,20 @@ export default function Contact() {
               .max(255, 'Message must be 255 characters or less')
               .required('Required'),
           })}
-          onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
+          onSubmit={(values, actions) => {
+            fetch("/", {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: encode({ "form-name": "form-name", ...values })
+            })
+              .then(() => {
+                alert('Success');
+                actions.resetForm()
+              })
+              .catch(() => {
+                alert('Error');
+              })
+              .finally(() => actions.setSubmitting(false))
           }}
         >
           <Form className={style.form}>
