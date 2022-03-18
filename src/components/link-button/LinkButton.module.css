@@ -41,11 +41,12 @@
 }
 
 .transparent::before {
+  font-family: 'Alata', sans-serif;
   color: var(--primary);
   content: '↓ ';
   font-size: 2rem;
   position: relative;
-  top: 3px;
+  top: 5px;
 }
 
 .transparent:hover {

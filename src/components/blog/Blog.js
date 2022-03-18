@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import Card from './blog-card/BlogCard'
+import LinkButton from '../link-button/LinkButton';
 
 import style from './Blog.module.css'
 
@@ -57,13 +58,12 @@ export default function LatestUpdates() {
       <section className={style.block}>
         {error && console.log(error)}
         <div className={style.container}>
-          <a
-            className="headingWrapper"
+          <LinkButton
+            className={style.button}
+            variant="transparent"
             href="#latestUpdates"
             label="latest updates"
-          >
-            <h3 className={style.heading}>Latest Updates</h3>
-          </a>
+          />
           <p id="latestUpdates" className={style.anchor}></p>
           <div className={style.cards}>
             {backupPosts.map(post =>
@@ -84,13 +84,12 @@ export default function LatestUpdates() {
     return (
       <section className={style.block}>
         <div className={style.container}>
-          <a
-            className="headingWrapper"
+          <LinkButton
+            className={style.button}
+            variant="transparent"
             href="#latestUpdates"
             label="latest updates"
-          >
-            <h3 className={style.heading}>Latest Updates</h3>
-          </a>
+          />
           <p id="latestUpdates" className={style.anchor}></p>
           <div className={style.cardsContainer}>
             {posts.map(post =>
