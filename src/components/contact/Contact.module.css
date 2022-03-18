@@ -2,12 +2,12 @@
   width: 100%;
 }
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 7rem 2rem;
+  padding: 9rem 2rem;
 }
 
 .title {
@@ -70,8 +70,15 @@
   transform: scale(0.9);
 }
 
+.errorMessage {
+  color: var(--primary);
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+
 @media (max-width: 460px) {
-  .wrapper {
+  .container {
     padding: 2rem;
   }
   .title {
