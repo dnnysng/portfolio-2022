@@ -10,8 +10,7 @@ export default function WorkCard({
   link,
   linkType,
   cardVariant,
-  tech,
-  index
+  tech
 }) {
   return (
     <article className={`${style.container} ${style[cardVariant]}`}>
@@ -24,7 +23,7 @@ export default function WorkCard({
         <h2 className={style.title}>{title}</h2>
         {tech &&
           <div className={style.tagContainer}>
-            {tech.map(name => <span className={style.tag}>{name}</span>)}
+            {tech.map(name => <span className={style.tag} key={name}>{name}</span>)}
           </div>
         }
         <p className={style.description}>{description}</p>
