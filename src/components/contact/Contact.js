@@ -33,10 +33,10 @@ export default function Contact() {
             fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({ "form-name": "form-name", ...values })
+              body: encode({ "form-name": "contact", ...values })
             })
               .then(() => {
-                alert('Success');
+                alert(`Message sent! I'll get back to you as soon as possible.`);
                 actions.resetForm()
               })
               .catch(() => {
@@ -46,7 +46,6 @@ export default function Contact() {
           }}
         >
           <Form className={style.form}>
-            <Field type="hidden" name="form-name" value="contact" />
             <label className={style.label} htmlFor="name">Name</label>
             <Field className={style.inputText} name="name" type="text" placeholder="Your name..." />
             <ErrorMessage className={style.errorMessage} component="span" name="name" />
