@@ -1,23 +1,23 @@
-import { Formik, Field, Form, ErrorMessage } from 'formik'
-import * as Yup from 'yup'
+// import { Formik, Field, Form, ErrorMessage } from 'formik'
+// import * as Yup from 'yup'
 
 import style from './Contact.module.css'
 
 export default function Contact() {
 
   // formats formik data to be used with netlify forms
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&");
+  // }
 
   return (
     <section id="contact" className={style.block}>
       <div className={style.container}>
         <h1 className={style.title}>Contact Me</h1>
 
-        <Formik
+        {/* <Formik
           initialValues={{ name: '', email: '', message: '' }}
           validationSchema={Yup.object({
             name: Yup.string()
@@ -60,22 +60,23 @@ export default function Contact() {
 
             <button className={style.inputSubmit} type="submit">&gt;&gt; Send Message</button>
           </Form>
-        </Formik>
+        </Formik> */}
 
-        {/* <form className={style.form} name="contact" method="post">
+        <form className={style.form} name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <label className={style.label} htmlFor="name">Name</label>
-          <input className={style.inputText} type="text" name="name" placeholder="Your name.." />
+          <input className={style.inputText} type="text" name="name" placeholder="Your name.." required />
           <label className={style.label} htmlFor="email">Email</label>
-          <input className={style.inputText} type="email" name="email" placeholder="Your email.." />
+          <input className={style.inputText} type="email" name="email" placeholder="Your email.." required />
           <label className={style.label} htmlFor="message">Message</label>
           <textarea
             className={style.inputTextArea}
             name="message"
             placeholder="Write message.."
+            required
           ></textarea>
           <input className={style.inputSubmit} type="submit" value=">> Send Message" />
-        </form> */}
+        </form>
       </div>
     </section>
   )
