@@ -12,7 +12,11 @@ This portfolio is a collection of Danny's recent web development work.
 - Responsive
 - Dark & Light Toggle
 - Blog section connected to Medium API
-- Animated drop-down mobile menu
+- Animated mobile menu
+
+## Preview
+
+![Light](https://i.ibb.co/6ZMb8vt/screencapture-dannyseng-2022-03-20-00-05-34.png)
 
 ## Live
 
@@ -23,7 +27,3 @@ This portfolio is a collection of Danny's recent web development work.
 - React.js
 - Framer-Motion
 - Sanitize-HTML
-
-## Screenshots
-
-![Mockup](https://i.ibb.co/TB7brKz/mockup-of-two-samsung-galaxy-s10-in-portrait-position-against-a-plain-backdrop-564-el.png)
