@@ -44,7 +44,7 @@ const Work = () => {
       "tech": ["React", "Mantine", "DayJS"],
       "description": "Lift Yourself takes the complexity out of tracking your calisthenics workouts. Simply choose your workout type and track what's important... the sets and reps!",
       "live": "https://www.liftyourself.app",
-      "link": "https://github.com/dnnysng/lift-yourself",
+      "link": "https://github.com/dnnysng/lift-yourself-app",
       "linkType": "Github"
     },
     {
