@@ -26,6 +26,4 @@ This portfolio is a collection of Danny's recent web development work.
 
 ## Screenshots
 
-![Fullscreen](https://i.ibb.co/5Kt0TBn/dark-full.png)
-![Fullscreen Light](https://i.ibb.co/XsbChsX/light-full.png)
-![Mobile](https://i.ibb.co/CKM71s1/screencapture-localhost-3000-2022-02-22-22-14-16.png)
+![Mockup](https://i.ibb.co/TB7brKz/mockup-of-two-samsung-galaxy-s10-in-portrait-position-against-a-plain-backdrop-564-el.png)
