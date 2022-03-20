@@ -8,7 +8,7 @@ import quicktrailer from '../../assets/images/quicktrailers-mockup-min.png'
 import afexpress from '../../assets/images/afexpress-mockup-min.png'
 // import dualsense from '../../assets/images/controller-mockup.png'
 import vl from '../../assets/images/vl-mockup-min.png'
-// import liftYourself from '../../assets/images/lift-yourself-mockup.png'
+import liftYourself from '../../assets/images/lift-yourself-mockup.png'
 
 const Work = () => {
 
@@ -39,6 +39,15 @@ const Work = () => {
       "linkType": "Sample Code"
     },
     {
+      "image": liftYourself,
+      "title": "Lift Yourself: Calisthenics",
+      "tech": ["React", "Mantine", "DayJS"],
+      "description": "Lift Yourself takes the complexity out of tracking your calisthenics workouts. Simply choose your workout type and track what's important... the sets and reps!",
+      "live": "https://www.liftyourself.app",
+      "link": "https://github.com/dnnysng/lift-yourself",
+      "linkType": "Github"
+    },
+    {
       "image": quicktrailer,
       "title": "Quick Trailers",
       "description": "This react web application is connected to The Movie Database API and provides users with quick access to movie trailers by name. Results are displayed in a grid with the movie title and rating at a glance.",
@@ -47,15 +56,6 @@ const Work = () => {
       "linkType": "Github",
       "tech": ["React", "Rest API", "TheMovieDB"]
     },
-    // {
-    //   "image": liftYourself,
-    //   "title": "Lift Yourself: Calisthenics",
-    //   "tech": ["React", "DayJS"],
-    //   "description": "Lift Yourself takes the complexity out of tracking your calisthenics workouts. Simply choose your workout type and track what's important... the sets and reps!",
-    //   "live": "https://www.liftyourself.app",
-    //   "github": "https://github.com/dnnysng/lift-yourself",
-    //   "cardVariant": "mobileThumbnail"
-    // },
     // {
     //   "image": dualsense,
     //   "title": "DualSense Wireless Controller",
