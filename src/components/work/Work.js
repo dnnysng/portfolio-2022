@@ -16,24 +16,21 @@ const Work = () => {
     {
       "image": afexpress,
       "title": "AF Express NFT",
-      "description": "Non-fungible, but oh so delicious. I created an NFT collection of popular asian foods and this website displays each dish in all its glory. Now listed on Magic Eden, the most popular Solana NFT marketplace.",
+      "description": "This react web application serves as the hub for the AF Express NFT collection on Solana. Its pages are routed with react-router, animated using framer motion, and provide an NFT dashboard to retrieve token data fetched from the Magiceden API.",
       "live": "https://www.afexpress.art",
       "tech": [
         "React",
-        "Router",
-        "Context",
         "Framer Motion",
-        "Crypto",
-        "Blockchain",
-        "Solana",
-        "NFT"
+        "Cryptocurrencies",
+        "Solana Blockchain",
+        "NFTs"
       ]
     },
     {
       "image": vl,
       "title": "Virtual Learning Online",
       "tech": ["WordPress", "LearnDash LMS", "Woocommerce", "Elementor Pro"],
-      "description": "I learned a lot during this project and was the lead in both design and development. Main features include a learning management system, a group dashboard, Woocommerce & CRM integration.",
+      "description": "This online learning platform was built using WordPress, Woocommerce, and LearnDash. Features CRM integration for forms, registrations, and subscriptions. Has automated processes for emails, certificates, and blog posts.",
       "live": "https://www.virtuallearnonline.com",
       "link": "https://codepen.io/dnnysng/pen/zYwpgpL",
       "linkType": "Sample Code"
@@ -42,7 +39,7 @@ const Work = () => {
       "image": liftYourself,
       "title": "Lift Yourself: Calisthenics",
       "tech": ["React", "Mantine", "DayJS"],
-      "description": "Lift Yourself takes the complexity out of tracking your calisthenics workouts. Simply choose your workout type and track what's important... the sets and reps!",
+      "description": "This responsive web application is built using React and styled using the Mantine UI library. It allows users to track their progress and stay motivated while unlocking daily badges!",
       "live": "https://www.liftyourself.app",
       "link": "https://github.com/dnnysng/lift-yourself-app",
       "linkType": "Github"
