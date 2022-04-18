@@ -53,14 +53,6 @@ const Work = () => {
       "linkType": "Github",
       "tech": ["React", "Rest API", "TheMovieDB"]
     },
-    // {
-    //   "image": dualsense,
-    //   "title": "DualSense Wireless Controller",
-    //   "description": "This fullscreen featured product page showcases the Dualsense Wireless Controller and it's variety of new colors.",
-    //   "live": "https://dazzling-villani-5961ae.netlify.app/",
-    //   "github": "https://github.com/dnnysng/fullscreen-featured-product",
-    //   "tech": ["React", "Figma"]
-    // },
   ]
 
   return (

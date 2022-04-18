@@ -23,7 +23,7 @@ export default function LatestUpdates() {
       )
       .catch(
         (error) => {
-          setIsLoaded(true);
+          setIsLoaded(false);
           setError(error);
         }
       )
@@ -53,7 +53,7 @@ export default function LatestUpdates() {
     }
   ]
 
-  if (error || !isLoaded) {
+  if (!posts || !isLoaded) {
     return (
       <section className={style.block}>
         {error && console.log(error)}
@@ -65,7 +65,7 @@ export default function LatestUpdates() {
             label="latest updates"
           />
           <p id="latestUpdates" className={style.anchor}></p>
-          <div className={style.cards}>
+          <div className={style.cardsContainer}>
             {backupPosts.map(post =>
               <Card
                 key={post.title}
