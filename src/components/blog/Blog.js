@@ -50,6 +50,13 @@ export default function LatestUpdates() {
       link: "https://dannyseng.medium.com/how-to-use-google-fonts-in-your-react-js-projects-a73d45eb8d59?source=rss-5a9aa2716688------2",
       date: "Feb 25, 2022",
       title: "How to Use Google Fonts in Your React.js Projects"
+    },
+    {
+      description: "Blogs are an excellent way to provide value in the form of useful and informative content to your users. Having a blog section on your website helps keep...",
+      thumbnail: "https://miro.medium.com/max/1400/1*1Q62m8-Xr-U_huwHoSyO3Q.jpeg",
+      link: "https://dannyseng.medium.com/how-to-display-your-medium-posts-on-your-react-website-532fcdf91583",
+      date: "Feb 20, 2022",
+      title: "How to Display Your Medium Posts on Your React Website"
     }
   ]
 
