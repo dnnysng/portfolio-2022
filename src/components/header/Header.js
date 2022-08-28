@@ -30,9 +30,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                         Contact
                     </a>
                 </nav>
-                <AnimatePresence>
-                    {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
-                </AnimatePresence>
+                <AnimatePresence>{isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}</AnimatePresence>
                 <Hamburger className={style.hamburger} onClick={toggleMenu} />
             </div>
         </header>
