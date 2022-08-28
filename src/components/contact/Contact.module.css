@@ -1,100 +1,106 @@
 .block {
-  width: 100%;
-  min-height: calc(100vh - 141px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 141px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testButton {
-  width: 100%;
+    width: 100%;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 9rem 2rem;
 }
 
 .title {
-  font-size: 4rem;
-  color: var(--foreground);
-  margin-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--foreground);
+    margin-bottom: 1rem;
 }
 
 .paragraph {
-  font-size: 1.5rem;
-  color: var(--text);
-  margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--text);
+    margin: 2rem 0;
 }
 
 .form {
-  font-family: 'Titillium', sans-serif;
-  max-width: 500px;
-  text-align: left;
+    font-family: 'Titillium', sans-serif;
+    max-width: 500px;
+    text-align: left;
 }
 
 .label {
-  display: none;
+    display: none;
 }
 
 .inputText,
 .inputTextArea {
-  font-family: 'Titillium', sans-serif;
-  width: 100%;
-  padding: 0.7rem 1rem;
-  border: none;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+    font-family: 'Titillium', sans-serif;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: #333;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.inputText::placeholder,
+.inputTextArea::placeholder {
+    color: #bbb;
 }
 
 .inputText:focus,
 .inputTextArea:focus {
-  outline: 2px solid var(--primary);
+    outline: 2px solid #999;
 }
 
 .inputTextArea {
-  height: 100px;
-  margin-bottom: 0.5rem;
+    height: 100px;
+    margin-bottom: 0.5rem;
 }
 
 .inputSubmit {
-  font-family: 'Titillium', sans-serif;
-  background-color: var(--primary);
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  padding: 1rem 0;
-  width: 100%;
-  font-size: 1rem 2rem;
-  font-weight: bold;
-  transition: 0.3s all ease-in-out;
-  margin-top: 0.2rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #444;
+    cursor: pointer;
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 0.2rem;
 }
 
 .inputSubmit:hover {
-  transform: scale(0.9);
+    border: 2px solid var(--primary);
 }
 
 .errorMessage {
-  color: var(--primary);
-  position: relative;
-  left: 0;
-  top: -10px;
+    color: var(--primary);
+    position: relative;
+    left: 0;
+    top: -10px;
 }
 
 @media (max-width: 460px) {
-  .container {
-    padding: 2rem;
-  }
-  .title {
-    font-size: 3rem;
-  }
-  .paragraph {
-    font-size: 1.3rem;
-  }
+    .container {
+        padding: 2rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .paragraph {
+        font-size: 1.3rem;
+    }
 }

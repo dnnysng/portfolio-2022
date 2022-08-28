@@ -20,10 +20,10 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                     </a>
                 </div>
                 <nav className={style.nav}>
-                    <a className={style.link} href="#work">
-                        Work
+                    <a className={style.link} href="#projects">
+                        Projects
                     </a>
-                    <a className={style.link} href="#latestUpdates">
+                    <a className={style.link} href="#articles">
                         Articles
                     </a>
                     <a className={style.link} href="#contact">

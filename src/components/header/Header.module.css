@@ -1,87 +1,86 @@
 .block {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99;
-  transition: 2s all ease-in-out;
-  border-bottom: 1px solid var(--line);
-  background-color: var(--bg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 1px solid var(--line);
+    background-color: var(--bg);
 }
 
 .container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    max-width: 1660px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logoWrapper {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .logo {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--foreground);
-  width: max-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--foreground);
+    width: max-content;
 }
 
 .logo:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link {
-  font-size: 1rem;
-  margin-left: 3rem;
-  color: var(--foreground);
-  background: none;
-  border: none;
+    font-size: 1rem;
+    margin-left: 3rem;
+    color: #ccc;
+    background: none;
+    border: none;
 }
 
 .link:hover {
-  cursor: pointer;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
 
 .sun {
-  height: 30px;
-  width: 30px;
-  fill: var(--foreground);
-  margin-left: 3rem;
-  transition: 2s fill ease-in-out;
+    height: 30px;
+    width: 30px;
+    fill: var(--foreground);
+    margin-left: 3rem;
 }
 
 .sun:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hamburger {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 720px) {
-  .hamburger {
-    display: block;
-    stroke: var(--foreground);
-    margin-left: 2rem;
-    transition: 2s all ease-in-out;
-  }
-  .hamburger:hover {
-    cursor: pointer;
-  }
-  .nav {
-    display: none;
-  }
+    .hamburger {
+        display: block;
+        stroke: var(--foreground);
+        margin-left: 2rem;
+    }
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    .nav {
+        display: none;
+    }
 }

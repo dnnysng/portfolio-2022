@@ -12,14 +12,12 @@
 
 @font-face {
     font-family: 'Alata';
-    src: local('Alata'),
-        url('./assets/fonts/Alata-Regular.ttf') format('truetype');
+    src: local('Alata'), url('./assets/fonts/Alata-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Titillium';
-    src: local('Titillium'),
-        url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+    src: local('Titillium'), url('./assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
 * {
@@ -35,16 +33,14 @@ html {
 body {
     color: white;
     margin: 0;
-    font-family: 'Titillium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Titillium', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+        'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 h1,
@@ -54,7 +50,6 @@ h4,
 h5,
 h6 {
     font-family: 'Alata', sans-serif;
-    transition: 2s color ease-in-out;
 }
 
 a {
@@ -66,5 +61,4 @@ a,
 p,
 button {
     font-family: 'Titillium', sans-serif;
-    transition: 2s color ease-in-out;
 }

@@ -23,10 +23,10 @@ export default function MobileMenu({ toggleMenu }) {
 
     return (
         <motion.nav className={style.menu} variants={variants} initial="start" animate="open" exit="close">
-            <a className={style.link} onClick={toggleMenu} href="#work">
-                Work
+            <a className={style.link} onClick={toggleMenu} href="#projects">
+                Projects
             </a>
-            <a className={style.link} onClick={toggleMenu} href="#latestUpdates">
+            <a className={style.link} onClick={toggleMenu} href="#articles">
                 Articles
             </a>
             <a className={style.link} onClick={toggleMenu} href="#contact">

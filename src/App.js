@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
 import Header from './components/header/Header';
-import Home from './pages/Home';
 import Footer from './components/footer/Footer';
+import WorkGrid from './components/work-grid/WorkGrid';
+import Contact from './components/contact/Contact';
 
 import style from './App.module.css';
 
@@ -12,7 +13,8 @@ export default function App() {
     return (
         <div className={`${style.container} ${'theme'}`}>
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-            <Home menu={isMenuOpen} />
+            <WorkGrid />
+            <Contact />
             <Footer />
         </div>
     );
