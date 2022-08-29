@@ -105,57 +105,59 @@ export default function WorkGrid() {
         <PortalWithState closeOnOutsideClick closeOnEsc>
             {({ openPortal, closePortal, isOpen, portal }) => (
                 <React.Fragment>
-                    <section id="projects" className={style.workGridContainer}>
-                        <div className={style.sectionHeader}>
-                            <h2 className={style.hugeText}>welcome</h2>
-                            <p className={style.paragraph}>
-                                I'm an experienced <span className={style.underline}> designer</span>{' '}
-                                <span className={style.success}>+</span>{' '}
-                                <span className={style.underline}>developer</span> specializing in pixel-perfect
-                                websites. I'm the guy you need for your <strong>frontend projects</strong>.
-                            </p>
-                        </div>
-                        <div className={style.filterContainer}>
-                            <ul className={style.filters}>
-                                {filters.map((filter, id) => (
-                                    <li
-                                        onClick={() => handleFilter(filter)}
-                                        className={`${style.filter} ${selected === filter && style.selected}`}
-                                        key={id}
-                                    >
-                                        {filter}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <ResponsiveMasonry
-                            columnsCountBreakPoints={{
-                                460: 1,
-                                720: 2,
-                                1280: 3,
-                                1660: 4,
-                            }}
-                        >
-                            <Masonry className={style.cardGrid}>
-                                {projects
-                                    .filter((project) =>
-                                        selected === 'all projects' ? project : project.skills.includes(selected),
-                                    )
-                                    .map((project, index) => (
-                                        <ProjectCard
-                                            key={index}
-                                            thumbnail={project.thumbnail}
-                                            video={project.video}
-                                            brand={project.brand}
-                                            title={project.title}
-                                            skills={project.skills}
-                                            status={project.status}
-                                            open={openPortal}
-                                        />
+                    <div className={style.block}>
+                        <section id="projects" className={style.workGridContainer}>
+                            <div className={style.sectionHeader}>
+                                <h2 className={style.hugeText}>welcome</h2>
+                                <p className={style.paragraph}>
+                                    I'm an experienced <span className={style.underline}> designer</span>{' '}
+                                    <span className={style.success}>+</span>{' '}
+                                    <span className={style.underline}>developer</span> specializing in pixel-perfect
+                                    websites. I'm the guy you need for your <strong>frontend projects</strong>.
+                                </p>
+                            </div>
+                            <div className={style.filterContainer}>
+                                <ul className={style.filters}>
+                                    {filters.map((filter, id) => (
+                                        <li
+                                            onClick={() => handleFilter(filter)}
+                                            className={`${style.filter} ${selected === filter && style.selected}`}
+                                            key={id}
+                                        >
+                                            {filter}
+                                        </li>
                                     ))}
-                            </Masonry>
-                        </ResponsiveMasonry>
-                    </section>
+                                </ul>
+                            </div>
+                            <ResponsiveMasonry
+                                columnsCountBreakPoints={{
+                                    460: 1,
+                                    720: 2,
+                                    1280: 3,
+                                    1660: 4,
+                                }}
+                            >
+                                <Masonry className={style.cardGrid}>
+                                    {projects
+                                        .filter((project) =>
+                                            selected === 'all projects' ? project : project.skills.includes(selected),
+                                        )
+                                        .map((project, index) => (
+                                            <ProjectCard
+                                                key={index}
+                                                thumbnail={project.thumbnail}
+                                                video={project.video}
+                                                brand={project.brand}
+                                                title={project.title}
+                                                skills={project.skills}
+                                                status={project.status}
+                                                open={openPortal}
+                                            />
+                                        ))}
+                                </Masonry>
+                            </ResponsiveMasonry>
+                        </section>
+                    </div>
                     {portal(
                         <>
                             <ProjectDetails close={closePortal} />

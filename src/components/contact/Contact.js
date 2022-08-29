@@ -48,14 +48,16 @@ export default function Contact() {
                         <Formik
                             initialValues={{ name: '', email: '', message: '' }}
                             validationSchema={Yup.object({
-                                name: Yup.string().max(100, 'Name must be 100 characters or less').required('Required'),
+                                name: Yup.string()
+                                    .max(100, 'Name must be 100 characters or less')
+                                    .required('Name Required'),
                                 email: Yup.string()
                                     .email('Invalid email address')
-                                    .required('Required')
+                                    .required('Email Required')
                                     .max(70, 'Email address must be 70 characters or less'),
                                 message: Yup.string()
                                     .max(255, 'Message must be 255 characters or less')
-                                    .required('Required'),
+                                    .required('Message Required'),
                             })}
                             onSubmit={(values, actions) => {
                                 fetch('/', {
@@ -74,33 +76,42 @@ export default function Contact() {
                             }}
                         >
                             <Form className={style.form}>
-                                <label className={style.label} htmlFor="name">
-                                    Name
-                                </label>
-                                <Field className={style.inputText} name="name" type="text" placeholder="Your name..." />
-                                <ErrorMessage className={style.errorMessage} component="span" name="name" />
-
-                                <label className={style.label} htmlFor="email">
-                                    Email
-                                </label>
-                                <Field
-                                    className={style.inputText}
-                                    name="email"
-                                    type="email"
-                                    placeholder="Your email..."
-                                />
-                                <ErrorMessage className={style.errorMessage} component="span" name="email" />
-
-                                <label className={style.label} htmlFor="message">
-                                    Message
-                                </label>
-                                <Field
-                                    className={style.inputTextArea}
-                                    name="message"
-                                    as="textarea"
-                                    placeholder="Your message..."
-                                />
-                                <ErrorMessage className={style.errorMessage} component="span" name="message" />
+                                <div className={style.fieldContainer}>
+                                    <label className={style.label} htmlFor="name">
+                                        Name
+                                    </label>
+                                    <Field
+                                        className={style.inputText}
+                                        name="name"
+                                        type="text"
+                                        placeholder="Your name..."
+                                    />
+                                    <ErrorMessage className={style.errorMessage} component="span" name="name" />
+                                </div>
+                                <div className={style.fieldContainer}>
+                                    <label className={style.label} htmlFor="email">
+                                        Email
+                                    </label>
+                                    <Field
+                                        className={style.inputText}
+                                        name="email"
+                                        type="email"
+                                        placeholder="Your email..."
+                                    />
+                                    <ErrorMessage className={style.errorMessage} component="span" name="email" />
+                                </div>
+                                <div className={style.fieldContainer}>
+                                    <label className={style.label} htmlFor="message">
+                                        Message
+                                    </label>
+                                    <Field
+                                        className={style.inputTextArea}
+                                        name="message"
+                                        as="textarea"
+                                        placeholder="Your message..."
+                                    />
+                                    <ErrorMessage className={style.errorMessage} component="span" name="message" />
+                                </div>
 
                                 <button className={style.inputSubmit} type="submit">
                                     Send Message

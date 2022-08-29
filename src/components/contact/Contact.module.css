@@ -1,8 +1,8 @@
 .block {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    padding: 0px 30px 30px 30px;
 }
 
 .testButton {
@@ -14,11 +14,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 80px 30px;
+    padding: 30px;
+    width: 100%;
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
@@ -30,8 +31,11 @@
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Titillium', sans-serif;
-    max-width: 500px;
+    width: 100%;
     text-align: left;
 }
 
@@ -43,13 +47,13 @@
 .inputTextArea {
     font-family: 'Titillium', sans-serif;
     width: 100%;
+    border: 1px solid var(--line);
+    outline: none;
     padding: 0.7rem 1rem;
-    border: none;
-    background-color: #333;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    background-color: var(--line);
     border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
     color: var(--secondary);
 }
 
@@ -60,42 +64,59 @@
 
 .inputText:focus,
 .inputTextArea:focus {
-    outline: 2px solid var(--accent);
+    border: 1px solid var(--success);
+    outline: none;
 }
 
 .inputTextArea {
-    height: 100px;
-    margin-bottom: 1rem;
+    resize: none;
+    vertical-align: top;
 }
 
 .inputSubmit {
-    background-color: var(--accent);
+    background-color: var(--primary);
     color: var(--secondary);
     border: 2px solid var(--accent);
     cursor: pointer;
-    padding: 1rem 0;
-    width: 100%;
+    padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
-    margin-top: 0.2rem;
+    width: max-content;
+    margin: 1rem auto 0 auto;
 }
 
 .inputSubmit:hover {
-    background-color: var(--success);
     border: 2px solid var(--success);
+    background-color: var(--primary);
+}
+
+.fieldContainer {
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fieldContainer:last-of-type {
+    min-height: 98px;
 }
 
 .errorMessage {
-    color: var(--error);
-    position: relative;
-    left: 0;
-    top: -10px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    padding: 0 1rem 2px 1rem;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+    width: max-content;
+    background-color: var(--error);
+    margin-left: 10px;
+    margin-bottom: 0.5rem;
 }
 
-@media (max-width: 460px) {
+@media (min-width: 400px) {
     .container {
-        padding: 2rem;
+        max-width: 550px;
     }
     .title {
         font-size: 3rem;
