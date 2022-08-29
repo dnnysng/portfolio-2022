@@ -86,7 +86,7 @@
 }
 
 .errorMessage {
-    color: var(--primary);
+    color: crimson;
     position: relative;
     left: 0;
     top: -10px;
