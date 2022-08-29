@@ -50,7 +50,7 @@
     border: 1px solid var(--line);
     outline: none;
     padding: 0.7rem 1rem;
-    background-color: var(--line);
+    background-color: var(--primary);
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 1rem;
@@ -64,6 +64,12 @@
 
 .inputText:focus,
 .inputTextArea:focus {
+    border: 1px solid var(--secondary);
+    outline: none;
+}
+
+.inputText:hover,
+.inputTextArea:hover {
     border: 1px solid var(--success);
     outline: none;
 }
@@ -76,26 +82,23 @@
 .inputSubmit {
     background-color: var(--primary);
     color: var(--secondary);
-    border: 2px solid var(--accent);
+    border: 1px solid var(--accent);
     cursor: pointer;
     padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
-    width: max-content;
-    margin: 1rem auto 0 auto;
+    width: 100%;
 }
 
 .inputSubmit:hover {
-    border: 2px solid var(--success);
-    background-color: var(--primary);
+    border: 1px solid var(--success);
 }
 
 .fieldContainer {
     min-height: 75px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .fieldContainer:last-of-type {
@@ -104,10 +107,11 @@
 
 .errorMessage {
     font-size: 0.8rem;
-    color: var(--secondary);
+    color: var(--primary);
     padding: 0 1rem 2px 1rem;
     border-radius: 0 0 10px 10px;
     font-weight: bold;
+    letter-spacing: 3px;
     width: max-content;
     background-color: var(--error);
     margin-left: 10px;

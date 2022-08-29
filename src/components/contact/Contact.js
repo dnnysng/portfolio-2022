@@ -48,16 +48,14 @@ export default function Contact() {
                         <Formik
                             initialValues={{ name: '', email: '', message: '' }}
                             validationSchema={Yup.object({
-                                name: Yup.string()
-                                    .max(100, 'Name must be 100 characters or less')
-                                    .required('Name Required'),
+                                name: Yup.string().max(100, 'Name must be 100 characters or less').required('Required'),
                                 email: Yup.string()
                                     .email('Invalid email address')
-                                    .required('Email Required')
+                                    .required('Required')
                                     .max(70, 'Email address must be 70 characters or less'),
                                 message: Yup.string()
                                     .max(255, 'Message must be 255 characters or less')
-                                    .required('Message Required'),
+                                    .required('Required'),
                             })}
                             onSubmit={(values, actions) => {
                                 fetch('/', {
