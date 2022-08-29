@@ -5,9 +5,13 @@
     --foreground: #fafafa;
     --line: #404040;
     --text: #bcbcbc;
-    --primary: #dc143c;
+    --primary: lime;
     --shadow: #00000055;
     --tag: #ededed22;
+}
+
+.noScroll {
+    overflow: hidden;
 }
 
 @font-face {

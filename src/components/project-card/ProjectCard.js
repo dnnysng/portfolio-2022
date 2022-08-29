@@ -1,8 +1,8 @@
 import style from './ProjectCard.module.css';
 
-export default function ProjectCard({ video, thumbnail, title, brand, skills, status }) {
+export default function ProjectCard({ video, thumbnail, title, brand, skills, status, open }) {
     return (
-        <div className={style.card}>
+        <div className={style.card} onClick={open}>
             <div className={style.cardHeader}>
                 <h4 className={style.cardBrand}>{brand}</h4>
                 <div className={`${style.cardStatus} ${style[status]}`}>● {status}</div>

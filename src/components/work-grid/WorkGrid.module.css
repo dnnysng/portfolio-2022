@@ -9,7 +9,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem 30px 0 30px;
+    padding: 2rem 15px 0 30px;
 }
 
 .filters {
@@ -47,7 +47,7 @@
 }
 
 .sectionHeader {
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,11 +82,9 @@
 
 @media (min-width: 920px) {
     .sectionHeader {
-        padding: 0 20px;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 2rem;
     }
 
     .hugeText {
