@@ -17,7 +17,7 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid var(--accent);
 }
 
 .image:hover {
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     background: white;
-    color: var(--bg);
+    color: var(--primary);
     padding: 1.5rem 1.5rem 0 1.5rem;
     z-index: 1;
 }
@@ -50,12 +50,12 @@
 }
 
 .title:hover {
-    color: var(--primary);
+    color: var(--accent);
     transform: scale(0.95);
 }
 
 .excerpt {
-    color: #343434;
+    color: var(--text);
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -67,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #00000033;
+    border-top: 1px solid var(--shadow);
     padding-top: 0.8rem;
 }
 

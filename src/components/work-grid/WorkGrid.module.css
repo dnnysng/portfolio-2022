@@ -23,23 +23,23 @@
 }
 
 .filter {
-    color: #ccc;
+    color: var(--text);
     text-transform: capitalize;
-    border: 1px solid #444;
+    border: 1px solid var(--line);
     border-radius: 10px;
     padding: 0.5rem 1rem;
 }
 
 .filter:hover {
     cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--success);
 }
 
 .selected {
     color: #fff;
     font-weight: bold;
+    border: 1px solid var(--accent);
 }
 
 .cardGrid {
@@ -58,20 +58,28 @@
 .hugeText {
     font-size: 4rem;
     font-weight: bold;
-    color: white;
+    color: var(--secondary);
     text-transform: uppercase;
 }
 
 .paragraph {
     font-size: 1.5rem;
     text-align: center;
-    max-width: 620px;
+    max-width: 630px;
 }
 
-.underlineRed {
+.underline {
     text-decoration-line: underline;
-    text-decoration-thickness: 0.1rem;
-    text-decoration-color: var(--primary);
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: var(--accent);
+}
+
+.success {
+    color: var(--success);
+}
+
+.accent {
+    color: var(--accent);
 }
 
 @media (min-width: 720px) {
@@ -90,9 +98,8 @@
     .hugeText {
         font-size: 5rem;
         font-weight: bold;
-        color: white;
         text-transform: uppercase;
-        border-right: 1px solid #444;
+        border-right: 7px solid var(--accent);
         padding-right: 2rem;
         margin-right: 2rem;
     }
@@ -103,12 +110,5 @@
 
     .filterContainer {
         justify-content: flex-start;
-    }
-}
-
-@media (min-width: 1280px) {
-    .workGrid {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-template-rows: masonry;
     }
 }

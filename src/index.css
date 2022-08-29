@@ -1,13 +1,16 @@
 .theme {
-    --bg: #202020;
-    --bg-header: #181818;
-    --bg-50: #202020ee;
-    --foreground: #fafafa;
-    --line: #404040;
-    --text: #bcbcbc;
-    --primary: lime;
-    --shadow: #00000055;
-    --tag: #ededed22;
+    --primary: #1a1b18;
+    --primary50: #1a1b18ee;
+    --secondary: #f2f2f2;
+    --accent: #389cd6;
+    --line: #ffffff33;
+
+    --text: #cfd2d3;
+    --shadow: #111;
+
+    --error: #e63737;
+    --warning: #ff8800;
+    --success: #16e351;
 }
 
 .noScroll {

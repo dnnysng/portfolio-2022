@@ -109,9 +109,10 @@ export default function WorkGrid() {
                         <div className={style.sectionHeader}>
                             <h2 className={style.hugeText}>welcome</h2>
                             <p className={style.paragraph}>
-                                I'm an experienced <span className={style.underlineRed}> designer</span> <em>and</em>{' '}
-                                <span className={style.underlineRed}>developer</span> specializing in pixel-perfect
-                                websites. I'm the guy you need for your <strong>frontend</strong> projects.
+                                I'm an experienced <span className={style.underline}> designer</span>{' '}
+                                <span className={style.success}>+</span>{' '}
+                                <span className={style.underline}>developer</span> specializing in pixel-perfect
+                                websites. I'm the guy you need for your <strong>frontend projects</strong>.
                             </p>
                         </div>
                         <div className={style.filterContainer}>

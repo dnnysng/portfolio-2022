@@ -8,7 +8,7 @@
     align-items: center;
     z-index: 99;
     border-bottom: 1px solid var(--line);
-    background-color: var(--bg);
+    background-color: var(--primary);
 }
 
 .container {
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
-    color: var(--foreground);
+    color: var(--secondary);
     width: max-content;
 }
 
@@ -45,21 +45,24 @@
 .link {
     font-size: 1rem;
     margin-left: 3rem;
-    color: #ccc;
+    color: var(--text);
     background: none;
     border: none;
+    text-transform: capitalize;
 }
 
 .link:hover {
     cursor: pointer;
-    color: white;
-    font-weight: bold;
+    color: var(--secondary);
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-color: var(--success);
 }
 
 .sun {
     height: 30px;
     width: 30px;
-    fill: var(--foreground);
+    fill: var(--secondary);
     margin-left: 3rem;
 }
 
@@ -74,7 +77,7 @@
 @media (max-width: 720px) {
     .hamburger {
         display: block;
-        stroke: var(--foreground);
+        stroke: var(--secondary);
         margin-left: 2rem;
     }
     .hamburger:hover {

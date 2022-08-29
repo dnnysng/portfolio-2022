@@ -19,7 +19,7 @@
 
 .title {
     font-size: 4rem;
-    color: var(--foreground);
+    color: var(--secondary);
     margin-bottom: 1rem;
 }
 
@@ -50,28 +50,28 @@
     margin-bottom: 1rem;
     font-size: 1rem;
     border-radius: 10px;
-    color: white;
+    color: var(--secondary);
 }
 
 .inputText::placeholder,
 .inputTextArea::placeholder {
-    color: #bbb;
+    color: var(--text);
 }
 
 .inputText:focus,
 .inputTextArea:focus {
-    outline: 2px solid #999;
+    outline: 2px solid var(--accent);
 }
 
 .inputTextArea {
     height: 100px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .inputSubmit {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #444;
+    background-color: var(--accent);
+    color: var(--secondary);
+    border: 2px solid var(--accent);
     cursor: pointer;
     padding: 1rem 0;
     width: 100%;
@@ -82,11 +82,12 @@
 }
 
 .inputSubmit:hover {
-    border: 2px solid var(--primary);
+    background-color: var(--success);
+    border: 2px solid var(--success);
 }
 
 .errorMessage {
-    color: crimson;
+    color: var(--error);
     position: relative;
     left: 0;
     top: -10px;
