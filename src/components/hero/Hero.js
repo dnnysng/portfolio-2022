@@ -2,7 +2,7 @@ import style from './Hero.module.css';
 
 export default function Hero() {
     return (
-        <section id={style.hero} className={style.block}>
+        <section id="hero" className={style.block}>
             <div className={style.sectionHeader}>
                 <h2 className={style.hugeText}>welcome</h2>
                 <p className={style.paragraph}>

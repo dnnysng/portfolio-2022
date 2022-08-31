@@ -53,6 +53,14 @@
     }
 }
 
+@media (min-width: 400px) {
+    .filter:hover {
+        cursor: pointer;
+        color: var(--secondary);
+        border: 1px solid var(--success);
+    }
+}
+
 @media (min-width: 920px) {
     .sectionHeader {
         flex-direction: row;
@@ -80,12 +88,6 @@
     .filterContainer {
         justify-content: flex-start;
         padding-left: 16px;
-    }
-
-    .filter:hover {
-        cursor: pointer;
-        color: var(--secondary);
-        border: 1px solid var(--success);
     }
 
     .cardGrid {

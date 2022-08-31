@@ -54,6 +54,12 @@
     display: none;
 }
 
+@media (min-width: 400px) {
+    .hamburger:hover {
+        cursor: pointer;
+    }
+}
+
 @media (min-width: 550px) {
     .container {
         max-width: 1660px;
