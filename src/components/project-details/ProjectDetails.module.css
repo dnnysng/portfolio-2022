@@ -1,5 +1,6 @@
 .modalContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -11,4 +12,52 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+    gap: 1rem;
+    padding: 30px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand {
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--accent);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.description {
+    text-align: justify;
+}
+
+.button {
+    background-color: transparent;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.button:first-of-type {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+}
+
+.button:hover {
+    cursor: pointer;
+    border: 1px solid var(--success);
 }

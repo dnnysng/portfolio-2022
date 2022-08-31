@@ -7,46 +7,65 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     color: var(--text);
-    padding: 1rem 1rem 1rem 2rem;
-    max-width: 1660px;
+    padding: 1rem;
+    height: 130px;
 }
 
 .socialContainer {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .social {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.9rem;
+    padding: 1rem;
 }
 
 .social svg {
     fill: var(--text);
 }
 
-.social svg:hover {
-    fill: white;
-    cursor: pointer;
+.brand {
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    border-right: 3px solid var(--accent);
+    padding-right: 12px;
+    margin-right: 10px;
 }
 
-@media (max-width: 560px) {
+.copyright {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 400px) {
     .container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: max-content;
+        max-width: 1660px;
+    }
+
+    .social svg:hover {
+        fill: var(--success);
+        cursor: pointer;
+    }
+
+    .social {
+        width: 50px;
+        height: 50px;
+        display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem 2rem 0 2rem;
-    }
-    .socialContainer {
         padding: 1rem;
     }
 }

@@ -2,11 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0px 30px 30px 30px;
-}
-
-.testButton {
-    width: 100%;
+    padding: 0px 10px 30px 10px;
 }
 
 .container {
@@ -14,20 +10,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 10px 10px;
     width: 100%;
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--secondary);
     margin-bottom: 1rem;
-}
-
-.paragraph {
-    font-size: 1.5rem;
-    color: var(--text);
-    margin: 2rem 0;
 }
 
 .form {
@@ -68,31 +58,22 @@
     outline: none;
 }
 
-.inputText:hover,
-.inputTextArea:hover {
-    border: 1px solid var(--success);
-    outline: none;
-}
-
 .inputTextArea {
     resize: none;
     vertical-align: top;
 }
 
 .inputSubmit {
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: var(--accent);
+    color: var(--primary);
     border: 1px solid var(--accent);
     cursor: pointer;
     padding: 1rem 2rem;
     font-size: 1rem;
-    font-weight: bold;
     border-radius: 10px;
     width: 100%;
-}
-
-.inputSubmit:hover {
-    border: 1px solid var(--success);
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
 }
 
 .fieldContainer {
@@ -111,21 +92,33 @@
     padding: 0 1rem 2px 1rem;
     border-radius: 0 0 10px 10px;
     font-weight: bold;
-    letter-spacing: 3px;
     width: max-content;
     background-color: var(--error);
     margin-left: 10px;
     margin-bottom: 0.5rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
     .container {
         max-width: 550px;
     }
+
     .title {
         font-size: 3rem;
     }
-    .paragraph {
-        font-size: 1.3rem;
+
+    .inputText:hover,
+    .inputTextArea:hover {
+        border: 1px solid var(--secondary);
+        outline: none;
+    }
+
+    .inputSubmit {
+        border: 1px solid var(--accent);
+    }
+
+    .inputSubmit:hover {
+        border: 1px solid var(--success);
+        background-color: var(--success);
     }
 }

@@ -5,17 +5,14 @@
 }
 
 .workGridContainer {
-    margin-top: 61px;
     width: 100%;
-    max-width: 1600px;
-    min-height: calc(100vh - 142px);
 }
 
 .filterContainer {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem 15px 0 30px;
+    padding: 2rem 10px 0 10px;
 }
 
 .filters {
@@ -33,64 +30,26 @@
     text-transform: capitalize;
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 0.5rem 1rem;
-}
-
-.filter:hover {
-    cursor: pointer;
-    color: var(--secondary);
-    border: 1px solid var(--success);
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 .selected {
     color: #fff;
-    font-weight: bold;
     border: 1px solid var(--accent);
 }
 
 .cardGrid {
-    padding: 1rem;
-}
-
-.sectionHeader {
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.hugeText {
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--secondary);
-    text-transform: uppercase;
-}
-
-.paragraph {
-    font-size: 1.5rem;
-    text-align: center;
-    max-width: 630px;
-}
-
-.underline {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.2rem;
-    text-decoration-color: var(--accent);
-}
-
-.success {
-    color: var(--success);
-}
-
-.accent {
-    color: var(--accent);
+    padding: 1rem 20px;
 }
 
 @media (min-width: 720px) {
     .workGrid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .selected {
+        font-weight: bold;
     }
 }
 
@@ -99,6 +58,10 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .workGridContainer {
+        max-width: 1660px;
     }
 
     .hugeText {
@@ -116,5 +79,17 @@
 
     .filterContainer {
         justify-content: flex-start;
+        padding-left: 16px;
+    }
+
+    .filter:hover {
+        cursor: pointer;
+        color: var(--secondary);
+        border: 1px solid var(--success);
+    }
+
+    .cardGrid {
+        padding: 0;
+        margin: 1rem 0 0 0;
     }
 }

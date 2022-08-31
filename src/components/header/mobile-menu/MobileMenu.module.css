@@ -1,7 +1,7 @@
 .menu {
     width: 100%;
     position: absolute;
-    top: 62.5px;
+    top: 64px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -9,16 +9,17 @@
     min-height: calc(100vh - 61.5px);
     background-color: var(--primary);
     gap: 1rem;
-    padding: 2rem;
-    transition: 2s background-color ease-in-out;
+    padding: 1rem;
 }
-.menu .link {
+
+.link {
     font-size: 2rem;
     font-weight: bold;
     background-color: var(--primary);
     color: var(--secondary);
     transition: 2s all ease-in-out;
     border: 1px solid var(--line);
+    border-radius: 10px;
     width: 100%;
     text-align: center;
     padding: 1rem 0;

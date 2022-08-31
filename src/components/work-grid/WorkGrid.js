@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import { PortalWithState } from 'react-portal';
-
-import ProjectDetails from '../project-details/ProjectDetails';
 
 import ahitHomepage from '../../assets/images/ahit-homepage-thumbnail.png';
 // import ahitSalaryCalculator from '../../assets/images/ahit-salary-calc-thumbnail.png';
@@ -70,7 +67,7 @@ export default function WorkGrid() {
         {
             thumbnail: quickTrailers,
             video: null,
-            brand: 'Quick Trailers',
+            brand: 'QuickTrailers',
             title: 'Search for Movie Trailers',
             skills: ['React', 'APIs', 'TheMovieDB'],
             status: 'live',
@@ -78,7 +75,7 @@ export default function WorkGrid() {
         {
             thumbnail: vl,
             video: null,
-            brand: 'Virtual Learning',
+            brand: 'Virtual Learning Online',
             title: 'Online Learning Platform',
             skills: ['Elementor', 'WordPress', 'Woocommerce', 'LearnDash'],
             status: 'offline',
@@ -86,8 +83,8 @@ export default function WorkGrid() {
         {
             thumbnail: null,
             video: dualsenseVideo,
-            brand: 'Personal Project',
-            title: 'Product Page With Color Selection',
+            brand: 'Practice',
+            title: 'Featured Product With Color Previews',
             skills: ['Personal Project', 'React'],
             status: 'demo',
         },
@@ -102,69 +99,48 @@ export default function WorkGrid() {
     ];
 
     return (
-        <PortalWithState closeOnOutsideClick closeOnEsc>
-            {({ openPortal, closePortal, isOpen, portal }) => (
-                <React.Fragment>
-                    <div className={style.block}>
-                        <section id="projects" className={style.workGridContainer}>
-                            <div className={style.sectionHeader}>
-                                <h2 className={style.hugeText}>welcome</h2>
-                                <p className={style.paragraph}>
-                                    I'm an experienced <span className={style.underline}> designer</span>{' '}
-                                    <span className={style.success}>+</span>{' '}
-                                    <span className={style.underline}>developer</span> specializing in pixel-perfect
-                                    websites. I'm the guy you need for your <strong>frontend projects</strong>.
-                                </p>
-                            </div>
-                            <div className={style.filterContainer}>
-                                <ul className={style.filters}>
-                                    {filters.map((filter, id) => (
-                                        <li
-                                            onClick={() => handleFilter(filter)}
-                                            className={`${style.filter} ${selected === filter && style.selected}`}
-                                            key={id}
-                                        >
-                                            {filter}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <ResponsiveMasonry
-                                columnsCountBreakPoints={{
-                                    460: 1,
-                                    720: 2,
-                                    1280: 3,
-                                    1660: 4,
-                                }}
+        <div className={style.block}>
+            <section id="projects" className={style.workGridContainer}>
+                <div className={style.filterContainer}>
+                    <ul className={style.filters}>
+                        {filters.map((filter, id) => (
+                            <li
+                                onClick={() => handleFilter(filter)}
+                                className={`${style.filter} ${selected === filter && style.selected}`}
+                                key={id}
                             >
-                                <Masonry className={style.cardGrid}>
-                                    {projects
-                                        .filter((project) =>
-                                            selected === 'all projects' ? project : project.skills.includes(selected),
-                                        )
-                                        .map((project, index) => (
-                                            <ProjectCard
-                                                key={index}
-                                                thumbnail={project.thumbnail}
-                                                video={project.video}
-                                                brand={project.brand}
-                                                title={project.title}
-                                                skills={project.skills}
-                                                status={project.status}
-                                                open={openPortal}
-                                            />
-                                        ))}
-                                </Masonry>
-                            </ResponsiveMasonry>
-                        </section>
-                    </div>
-                    {portal(
-                        <>
-                            <ProjectDetails close={closePortal} />
-                        </>,
-                    )}
-                </React.Fragment>
-            )}
-        </PortalWithState>
+                                {filter}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <ResponsiveMasonry
+                    columnsCountBreakPoints={{
+                        460: 1,
+                        720: 2,
+                        1280: 3,
+                        1660: 4,
+                    }}
+                >
+                    <Masonry className={style.cardGrid}>
+                        {projects
+                            .filter((project) =>
+                                selected === 'all projects' ? project : project.skills.includes(selected),
+                            )
+                            .map((project, index) => (
+                                <ProjectCard
+                                    key={index}
+                                    thumbnail={project.thumbnail}
+                                    video={project.video}
+                                    brand={project.brand}
+                                    title={project.title}
+                                    skills={project.skills}
+                                    status={project.status}
+                                />
+                            ))}
+                    </Masonry>
+                </ResponsiveMasonry>
+            </section>
+        </div>
     );
 }
