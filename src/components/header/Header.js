@@ -1,9 +1,9 @@
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from "framer-motion";
 
-import MobileMenu from './mobile-menu/MobileMenu';
-import { ReactComponent as Hamburger } from '../../assets/icons/hamburger.svg';
+import MobileMenu from "./mobile-menu/MobileMenu";
+import { ReactComponent as Hamburger } from "../../assets/icons/hamburger.svg";
 
-import style from './Header.module.css';
+import style from "./Header.module.css";
 
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
     // menu toggle
@@ -22,9 +22,6 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                 <nav className={style.nav}>
                     <a className={style.link} href="#projects">
                         Projects
-                    </a>
-                    <a className={style.link} href="#articles">
-                        Articles
                     </a>
                     <a className={style.link} href="#contact">
                         Contact

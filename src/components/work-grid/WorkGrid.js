@@ -6,6 +6,7 @@ import liftYourself from "../../assets/images/liftyourself.png";
 import quickTrailers from "../../assets/images/quicktrailers-thumbnail.png";
 import vl from "../../assets/images/vl-laptop.png";
 import newsLetter from "../../assets/images/newsletter.png";
+import reactDocs from "../../assets/images/react-docs-thumbnail.png";
 
 import afexpressVideo from "../../assets/videos/af-express-thumbnail.mov";
 import dualsenseVideo from "../../assets/videos/dualsense.mov";
@@ -96,6 +97,17 @@ export default function WorkGrid() {
             status: "demo",
             summary: "",
             url: "",
+        },
+        {
+            thumbnail: reactDocs,
+            video: null,
+            brand: "Study Guide",
+            title: "Lightweight React Docs",
+            skills: ["React"],
+            status: "live",
+            summary:
+                "This project is a lightweight ReactJS documentation used mainly as a personal study guide and reference. The official React docs can be very verbose at times so I broke concepts down in a way that made it easier for me to understand.",
+            url: "https://shimmering-chebakia-26105d.netlify.app/",
         },
     ];
 

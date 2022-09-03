@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import style from './MobileMenu.module.css';
+import style from "./MobileMenu.module.css";
 
 export default function MobileMenu({ toggleMenu }) {
     const variants = {
         start: {
-            x: '-100vw',
+            x: "-100vw",
         },
         open: {
             x: 0,
@@ -14,7 +14,7 @@ export default function MobileMenu({ toggleMenu }) {
             },
         },
         close: {
-            x: '-100vw',
+            x: "-100vw",
             transition: {
                 duration: 0.5,
             },
@@ -25,9 +25,6 @@ export default function MobileMenu({ toggleMenu }) {
         <motion.nav className={style.menu} variants={variants} initial="start" animate="open" exit="close">
             <a className={style.link} onClick={toggleMenu} href="#projects">
                 Projects
-            </a>
-            <a className={style.link} onClick={toggleMenu} href="#articles">
-                Articles
             </a>
             <a className={style.link} onClick={toggleMenu} href="#contact">
                 Contact
