@@ -95,3 +95,16 @@
         margin: 1rem 0 0 0;
     }
 }
+
+.details {
+    width: 100%;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.title {
+    color: var(--accent);
+}

@@ -5,7 +5,15 @@ import ProjectDetails from '../project-details/ProjectDetails';
 
 import style from './ProjectCard.module.css';
 
-export default function ProjectCard({ video, thumbnail, title, brand, skills, status }) {
+export default function ProjectCard({ video, thumbnail, title, brand, skills, status, summary, url }) {
+    function scroll() {
+        document.body.style.overflow = 'scroll';
+    }
+
+    function noScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
     return (
         <PortalWithState closeOnOutsideClick closeOnEsc>
             {({ openPortal, closePortal, isOpen, portal }) => (
@@ -15,6 +23,7 @@ export default function ProjectCard({ video, thumbnail, title, brand, skills, st
                             <h4 className={style.cardBrand}>{brand}</h4>
                             <div className={`${style.cardStatus} ${style[status]}`}>● {status}</div>
                         </div>
+                        {isOpen ? noScroll() : scroll()}
                         {video && (
                             <video
                                 src={video}
@@ -51,6 +60,8 @@ export default function ProjectCard({ video, thumbnail, title, brand, skills, st
                                 status={status}
                                 video={video}
                                 thumbnail={thumbnail}
+                                summary={summary}
+                                url={url}
                             />
                         </>,
                     )}
