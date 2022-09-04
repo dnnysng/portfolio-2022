@@ -1,17 +1,17 @@
-import React from 'react';
-import { PortalWithState } from 'react-portal';
+import React from "react";
+import { PortalWithState } from "react-portal";
 
-import ProjectDetails from '../project-details/ProjectDetails';
+import ProjectDetails from "../project-details/ProjectDetails";
 
-import style from './ProjectCard.module.css';
+import style from "./ProjectCard.module.css";
 
 export default function ProjectCard({ video, thumbnail, title, brand, skills, status, summary, url }) {
     function scroll() {
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = "scroll";
     }
 
     function noScroll() {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowY = "hidden";
     }
 
     return (
