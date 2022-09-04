@@ -22,7 +22,7 @@ export default function Footer() {
                         <Medium className={style.socialIcon} title="medium" />
                     </a>
                     <a className={style.social} href="https://www.linkedin.com/in/dannyseng/" target="blank_">
-                        <Linked className={style.socialIcon} title="linkedin" />
+                        <Linkedin className={style.socialIcon} title="linkedin" />
                     </a>
                     <a className={style.social} href="http://www.github.com/dnnysng" target="blank_">
                         <Github className={style.socialIcon} title="github" />
