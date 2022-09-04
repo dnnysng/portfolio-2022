@@ -7,6 +7,8 @@
     padding: 1rem;
     margin: 10px 0;
     background-color: transparent;
+    text-align: left;
+    font-size: 1rem;
 }
 
 .cardHeader {
@@ -15,6 +17,7 @@
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 .cardStatus {

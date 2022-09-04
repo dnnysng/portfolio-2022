@@ -1,9 +1,16 @@
 import style from "./ProjectDetails.module.css";
 import "../../index.css";
 
-export default function ProjectDetails({ close, title, video, thumbnail, brand, skills, status, summary, url }) {
+export default function ProjectDetails({ close, title, brand, status, summary, url }) {
+    function handleOutsideClick(event) {
+        event.preventDefault();
+        if (event.target === event.currentTarget) {
+            close();
+        }
+    }
+
     return (
-        <div className={`${style.block} ${"theme"}`}>
+        <dialog className={`${style.block} ${"theme"}`} onClick={handleOutsideClick}>
             <div className={style.modalContainer}>
                 <div className={style.heading}>
                     <h1 className={style.brand}>{brand}</h1>
@@ -25,6 +32,6 @@ export default function ProjectDetails({ close, title, video, thumbnail, brand, 
                     </button>
                 </div>
             </div>
-        </div>
+        </dialog>
     );
 }
