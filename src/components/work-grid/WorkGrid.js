@@ -11,9 +11,9 @@ import salaryCalc from "../../assets/images/ahit-salary-calc-thumbnail.png";
 import psCountdown from "../../assets/images/ps-countdown-thumbnail.png";
 import fakeinvestor from "../../assets/images/fakeinvestor-thumbnail.png";
 
-import afexpressVideo from "../../assets/videos/af-express-thumbnail.mov";
+import afexpressVideo from "../../assets/videos/af-express-thumbnail.mp4";
 import dualsenseVideo from "../../assets/videos/dualsense.mov";
-import animatedPage from "../../assets/videos/animated-homepage.mov";
+import animatedPage from "../../assets/videos/animated-homepage.mp4";
 
 import style from "./WorkGrid.module.css";
 import ProjectCard from "../project-card/ProjectCard";
