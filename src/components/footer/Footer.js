@@ -18,19 +18,20 @@ export default function Footer() {
                     <time>Copyright {year}</time>
                 </div>
                 <div className={style.socialContainer}>
-                    <a className={style.social} href="https://medium.com/@dannyseng" target="blank_" alt="medium icon">
-                        <Medium className={style.socialIcon} />
+                    <a className={style.social} href="https://medium.com/@dannyseng" target="blank_">
+                        <Medium className={style.socialIcon}>
+                            <title>Medium</title>
+                        </Medium>
                     </a>
-                    <a
-                        className={style.social}
-                        href="https://www.linkedin.com/in/dannyseng/"
-                        target="blank_"
-                        alt="linkedin icon"
-                    >
-                        <Linkedin className={style.socialIcon} />
+                    <a className={style.social} href="https://www.linkedin.com/in/dannyseng/" target="blank_">
+                        <Linkedin className={style.socialIcon}>
+                            <title>LinkedIn</title>
+                        </Linkedin>
                     </a>
-                    <a className={style.social} href="http://www.github.com/dnnysng" target="blank_" alt="github icon">
-                        <Github className={style.socialIcon} />
+                    <a className={style.social} href="http://www.github.com/dnnysng" target="blank_">
+                        <Github className={style.socialIcon}>
+                            <title>Github</title>
+                        </Github>
                     </a>
                 </div>
             </div>
