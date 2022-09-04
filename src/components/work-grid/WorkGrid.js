@@ -162,7 +162,7 @@ export default function WorkGrid() {
 
     return (
         <div className={style.block}>
-            <section id="projects" className={style.workGridContainer}>
+            <section className={style.workGridContainer}>
                 <div className={style.filterContainer}>
                     <ul className={style.filters}>
                         {filters.map((filter, id) => (

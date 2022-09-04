@@ -13,9 +13,12 @@ export default function App() {
 
     return (
         <div className={`${style.container} ${"theme"}`}>
+            <button disabled className={style.anchor} id="top"></button>
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             <Hero />
+            <button disabled className={`${style.anchor} ${style.projects}`} id="projects"></button>
             <WorkGrid />
+            <button disabled className={style.anchor} id="contact"></button>
             <Contact />
             <Footer />
         </div>

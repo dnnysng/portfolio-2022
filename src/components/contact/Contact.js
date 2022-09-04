@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import { motion, AnimatePresence } from "framer-motion";
 
-import style from './Contact.module.css';
+import style from "./Contact.module.css";
 
 export default function Contact() {
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -11,8 +11,8 @@ export default function Contact() {
     // formats formik data to be used with netlify forms
     function encode(data) {
         return Object.keys(data)
-            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-            .join('&');
+            .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
     }
 
     // animation vars
@@ -33,7 +33,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className={style.block}>
+        <section className={style.block}>
             <AnimatePresence exitBeforeEnter initial={false}>
                 {!formSubmitted ? (
                     <motion.div
@@ -46,29 +46,29 @@ export default function Contact() {
                     >
                         <h1 className={style.title}>Contact Me</h1>
                         <Formik
-                            initialValues={{ name: '', email: '', message: '' }}
+                            initialValues={{ name: "", email: "", message: "" }}
                             validationSchema={Yup.object({
-                                name: Yup.string().max(100, 'Name must be 100 characters or less').required('Required'),
+                                name: Yup.string().max(100, "Name must be 100 characters or less").required("Required"),
                                 email: Yup.string()
-                                    .email('Invalid email address')
-                                    .required('Required')
-                                    .max(70, 'Email address must be 70 characters or less'),
+                                    .email("Invalid email address")
+                                    .required("Required")
+                                    .max(70, "Email address must be 70 characters or less"),
                                 message: Yup.string()
-                                    .max(255, 'Message must be 255 characters or less')
-                                    .required('Required'),
+                                    .max(255, "Message must be 255 characters or less")
+                                    .required("Required"),
                             })}
                             onSubmit={(values, actions) => {
-                                fetch('/', {
-                                    method: 'POST',
-                                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                                    body: encode({ 'form-name': 'contact', ...values }),
+                                fetch("/", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                                    body: encode({ "form-name": "contact", ...values }),
                                 })
                                     .then(() => {
                                         setFormSubmitted(true);
                                         actions.resetForm();
                                     })
                                     .catch(() => {
-                                        alert('Error');
+                                        alert("Error");
                                     })
                                     .finally(() => actions.setSubmitting(false));
                             }}

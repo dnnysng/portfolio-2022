@@ -15,7 +15,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         <header className={style.block}>
             <div className={style.container}>
                 <div className={style.logoWrapper}>
-                    <a href="#hero">
+                    <a href="#top">
                         <h3 className={style.logo}>Danny Seng</h3>
                     </a>
                 </div>
