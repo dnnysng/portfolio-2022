@@ -71,3 +71,8 @@ p,
 button {
     font-family: "Titillium", sans-serif;
 }
+
+img,
+video {
+    aspect-ratio: attr(width) / attr(height);
+}
