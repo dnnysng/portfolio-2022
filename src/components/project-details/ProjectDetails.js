@@ -11,11 +11,11 @@ export default function ProjectDetails({ close, title, video, thumbnail, brand, 
                 </div>
                 <p className={style.description}>{summary}</p>
                 {status === "offline" && (
-                    <p className={style.offline}>Site has been updated recently to a new frontend.</p>
+                    <p className={style.offline}>Site has been recently updated to a new frontend.</p>
                 )}
                 <div className={style.clickables}>
                     {status !== "offline" && (
-                        <a className={style.button} href={url} target="blank_">
+                        <a className={style.button} href={url} target="_blank" rel="noReferrer">
                             {status === "demo" && "View Demo"}
                             {status === "live" && "View Live"}
                         </a>

@@ -7,16 +7,20 @@ import quickTrailers from "../../assets/images/quicktrailers-thumbnail.png";
 import vl from "../../assets/images/vl-laptop.png";
 import newsLetter from "../../assets/images/newsletter.png";
 import reactDocs from "../../assets/images/react-docs-thumbnail.png";
+import salaryCalc from "../../assets/images/ahit-salary-calc-thumbnail.png";
+import psCountdown from "../../assets/images/ps-countdown-thumbnail.png";
+import fakeinvestor from "../../assets/images/fakeinvestor-thumbnail.png";
 
 import afexpressVideo from "../../assets/videos/af-express-thumbnail.mov";
 import dualsenseVideo from "../../assets/videos/dualsense.mov";
+import animatedPage from "../../assets/videos/animated-homepage.mov";
 
 import style from "./WorkGrid.module.css";
 import ProjectCard from "../project-card/ProjectCard";
 
 export default function WorkGrid() {
     const [selected, setSelected] = useState("all projects");
-    const filters = ["all projects", "Vanilla JS", "React", "Figma", "WordPress", "APIs", "Web Design"];
+    const filters = ["all projects", "Vanilla JS", "React", "WordPress", "APIs", "Design"];
 
     function handleFilter(selection) {
         setSelected(selection);
@@ -28,7 +32,7 @@ export default function WorkGrid() {
             thumbnail: null,
             brand: "AF Express",
             title: "NFT Collection and Gallery",
-            skills: ["React", "APIs"],
+            skills: ["React", "APIs", "Framer Motion", "Design"],
             status: "live",
             summary:
                 "This react web application serves as the hub for the AF Express NFT collection on Solana. Its pages are routed with react-router, animated using framer motion, and provide an NFT dashboard to retrieve token data fetched from the Magiceden API.",
@@ -39,11 +43,22 @@ export default function WorkGrid() {
             video: null,
             brand: "AHIT",
             title: "Homepage Redesign",
-            skills: ["Figma", "Web Design", "Vanilla JS", "WordPress", "Avada"],
+            skills: ["Figma", "Vanilla JS", "WordPress", "Avada"],
             status: "live",
             summary:
                 "AHIT is the leading national home inpsection school and I was tasked with building a new homepage. I learned a lot during this project while working cross-functionally with designers, content specialists, and SEM teams.",
             url: "https://www.ahit.com",
+        },
+        {
+            thumbnail: salaryCalc,
+            video: null,
+            brand: "AHIT",
+            title: "Home Inspector Salary Calculator",
+            skills: ["Vanilla JS", "WordPress", "APIs", "Avada", "Design"],
+            status: "live",
+            summary:
+                "This home inspection salary calculator allows potential students to see their earning potential. Built with vanilla javascript, this calc uses data from HomeAdvisor to calculate salaries based on location and anticipated workload.",
+            url: "https://www.ahit.com/how-much-does-a-home-inspector-make/",
         },
         {
             thumbnail: liftYourself,
@@ -72,7 +87,7 @@ export default function WorkGrid() {
             video: null,
             brand: "Virtual Learning Online",
             title: "Online Learning Platform",
-            skills: ["Elementor", "WordPress", "Woocommerce", "LearnDash"],
+            skills: ["Elementor", "WordPress", "Woocommerce", "LearnDash", "Design"],
             status: "offline",
             summary:
                 "This online learning platform was built using WordPress, Woocommerce, and LearnDash. Features CRM integration for forms, registrations, and subscriptions. Has automated processes for emails, certificates, and blog posts.",
@@ -95,8 +110,20 @@ export default function WorkGrid() {
             title: "Multi-step Form",
             skills: ["React", "Formik"],
             status: "demo",
-            summary: "",
+            summary:
+                "I built this multi-step form during an internship and learned how to use Formik to build a form complete with validation.",
             url: "",
+        },
+        {
+            thumbnail: null,
+            video: animatedPage,
+            brand: "Personal Project",
+            title: "GSAP Animated Homepage",
+            skills: ["Vanilla JS", "GSAP"],
+            status: "demo",
+            summary:
+                "Inspired by the intro to the Final Fantasy XV start menu, I built and animated this homepage using the GreenSock JavaScript animation library.",
+            url: "https://dnnysng.github.io/animated-hompage/",
         },
         {
             thumbnail: reactDocs,
@@ -108,6 +135,28 @@ export default function WorkGrid() {
             summary:
                 "This project is a lightweight ReactJS documentation used mainly as a personal study guide and reference. The official React docs can be very verbose at times so I broke concepts down in a way that made it easier for me to understand.",
             url: "https://shimmering-chebakia-26105d.netlify.app/",
+        },
+        {
+            thumbnail: psCountdown,
+            video: null,
+            brand: "Practice Project",
+            title: "Playstation 5 Countdown",
+            skills: ["Vanilla JS"],
+            status: "demo",
+            summary:
+                "I couldn't get my hands on a preorder, but that didn't stop me from bringing the hype. This promo page features the DualSense controller with a timer counting down to the official release date.",
+            url: "https://dnnysng.github.io/playstation-countdown/",
+        },
+        {
+            thumbnail: fakeinvestor,
+            video: null,
+            brand: "FakeInvestor",
+            title: "Amazon Merch T-Shirt Designs",
+            skills: ["Design"],
+            status: "live",
+            summary:
+                "FakeInvestor is a brand geared towards investors who aren't afraid to flex their gains. These T-Shirts allow them to do just that.",
+            url: "https://www.amazon.com/s?i=fashion&rh=n%3A7141123011%2Cp_4%3AFake+Investor&s=review-rank&ds=v1%3AJc5aXjAYYFwRd%2FmBWv0tlproBu5Q0m3QUBatMPmY3vA&qid=1662253615&ref=sr_st_review-rank",
         },
     ];
 
