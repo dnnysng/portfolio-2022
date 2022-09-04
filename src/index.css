@@ -20,11 +20,13 @@
 @font-face {
     font-family: "Alata";
     src: local("Alata"), url("./assets/fonts/Alata-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Titillium";
     src: local("Titillium"), url("./assets/fonts/TitilliumWeb-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 * {
