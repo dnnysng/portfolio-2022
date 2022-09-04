@@ -127,7 +127,8 @@ export default function Contact() {
                         exit="exit"
                     >
                         <h1 className={style.title}>Message Sent!</h1>
-                        <p className={style.paragraph}>Thanks for reaching out.</p>
+                        <p className={style.paragraph}>Thanks for reaching out, you'll hear from me soon!</p>
+                        <p className={style.emoji}>🤝</p>
                     </motion.div>
                 )}
             </AnimatePresence>

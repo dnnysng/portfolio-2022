@@ -3,8 +3,8 @@ import "../../index.css";
 
 export default function ProjectDetails({ close, title, brand, status, summary, url }) {
     function handleOutsideClick(event) {
-        event.preventDefault();
         if (event.target === event.currentTarget) {
+            event.preventDefault();
             close();
         }
     }

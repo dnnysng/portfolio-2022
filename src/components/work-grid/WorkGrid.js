@@ -112,7 +112,7 @@ export default function WorkGrid() {
             status: "demo",
             summary:
                 "I built this multi-step form during an internship and learned how to use Formik to build a form complete with validation.",
-            url: "",
+            url: "https://cool-starship-39f1ab.netlify.app/",
         },
         {
             thumbnail: null,
