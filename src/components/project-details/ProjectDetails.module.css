@@ -78,6 +78,7 @@ a.button {
 }
 
 a.button {
+    color: var(--primary);
     border: 1px solid var(--accent);
     background-color: var(--accent);
 }

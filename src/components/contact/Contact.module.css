@@ -67,7 +67,7 @@
 
 .inputSubmit {
     background-color: var(--accent);
-    color: var(--secondary);
+    color: var(--primary);
     border: 1px solid var(--accent);
     cursor: pointer;
     padding: 1rem 2rem;

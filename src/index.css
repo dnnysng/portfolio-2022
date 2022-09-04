@@ -1,6 +1,6 @@
 .theme {
-    --primary: #1a1b18;
-    --primary50: #1a1b18ee;
+    --primary: #0d0d0d;
+    --primary50: #0d0d0dee;
     --secondary: #f2f2f2;
     --accent: #389cd6;
     --line: #ffffff33;
@@ -8,7 +8,7 @@
     --text: #cfd2d3;
     --shadow: #111;
 
-    --error: #e63737;
+    --error: #ff6b6b;
     --warning: #ff8800;
     --success: #16e351;
 }
