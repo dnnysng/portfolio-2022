@@ -4,26 +4,21 @@ This portfolio is a collection of Danny's recent web development work.
 
 ## Contributors
 
-- [@dnnysng](https://github.com/dnnysng) - Developer
-- [@virajaher](https://www.figma.com/@virajaher) - Designer
+-   [@dnnysng](https://github.com/dnnysng) - Designer & Developer
 
 ## Features
 
-- Responsive
-- Dark & Light Toggle
-- Blog section connected to Medium API
-- Animated mobile menu
-
-## Preview
-
-![Light](https://i.ibb.co/6ZMb8vt/screencapture-dannyseng-2022-03-20-00-05-34.png)
+-   Responsive
+-   Filterable project grid
+-   Animated mobile menu
+-   Animated contact form w/ validation
 
 ## Live
 
-- [View Live](https://www.dannyseng.com)
+-   [View Live](https://www.dannyseng.com)
 
 ## Technologies
 
-- React.js
-- Framer-Motion
-- Sanitize-HTML
+-   React.js
+-   Framer-Motion
+-   Formik & Yup
