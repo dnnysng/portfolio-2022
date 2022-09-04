@@ -101,7 +101,7 @@ export default function WorkGrid() {
             status: "demo",
             summary:
                 "This project is a fullscreen featured product section showcasing a wireless gaming controller with the option to select colors with an updated preview.",
-            url: "dazzling-villani-5961ae.netlify.app/",
+            url: "https://dazzling-villani-5961ae.netlify.app/",
         },
         {
             thumbnail: newsLetter,
@@ -126,17 +126,6 @@ export default function WorkGrid() {
             url: "https://dnnysng.github.io/animated-hompage/",
         },
         {
-            thumbnail: reactDocs,
-            video: null,
-            brand: "Study Guide",
-            title: "Lightweight React Docs",
-            skills: ["React"],
-            status: "live",
-            summary:
-                "This project is a lightweight ReactJS documentation used mainly as a personal study guide and reference. The official React docs can be very verbose at times so I broke concepts down in a way that made it easier for me to understand.",
-            url: "https://shimmering-chebakia-26105d.netlify.app/",
-        },
-        {
             thumbnail: psCountdown,
             video: null,
             brand: "Practice Project",
@@ -146,6 +135,17 @@ export default function WorkGrid() {
             summary:
                 "I couldn't get my hands on a preorder, but that didn't stop me from bringing the hype. This promo page features the DualSense controller with a timer counting down to the official release date.",
             url: "https://dnnysng.github.io/playstation-countdown/",
+        },
+        {
+            thumbnail: reactDocs,
+            video: null,
+            brand: "Study Guide",
+            title: "Lightweight React Docs",
+            skills: ["React"],
+            status: "live",
+            summary:
+                "This project is a lightweight ReactJS documentation used mainly as a personal study guide and reference. The official React docs can be very verbose at times so I broke concepts down in a way that made it easier for me to understand.",
+            url: "https://shimmering-chebakia-26105d.netlify.app/",
         },
         {
             thumbnail: fakeinvestor,
