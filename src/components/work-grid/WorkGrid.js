@@ -166,12 +166,14 @@ export default function WorkGrid() {
                 <div className={style.filterContainer}>
                     <ul className={style.filters}>
                         {filters.map((filter, id) => (
-                            <li
-                                onClick={() => handleFilter(filter)}
-                                className={`${style.filter} ${selected === filter && style.selected}`}
-                                key={id}
-                            >
-                                {filter}
+                            <li>
+                                <button
+                                    onClick={() => handleFilter(filter)}
+                                    className={`${style.filter} ${selected === filter && style.selected}`}
+                                    key={id}
+                                >
+                                    {filter}
+                                </button>
                             </li>
                         ))}
                     </ul>
