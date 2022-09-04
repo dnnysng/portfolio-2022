@@ -6,6 +6,7 @@
     border: 1px solid var(--line);
     padding: 1rem;
     margin: 10px 0;
+    background-color: transparent;
 }
 
 .cardHeader {
@@ -18,7 +19,7 @@
 
 .cardStatus {
     font-size: 1rem;
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     text-transform: capitalize;
 }
 

@@ -18,7 +18,7 @@ export default function ProjectCard({ video, thumbnail, title, brand, skills, st
         <PortalWithState closeOnOutsideClick closeOnEsc>
             {({ openPortal, closePortal, isOpen, portal }) => (
                 <React.Fragment>
-                    <div className={style.card} onClick={openPortal}>
+                    <button className={style.card} onClick={openPortal}>
                         <div className={style.cardHeader}>
                             <h4 className={style.cardBrand}>{brand}</h4>
                             <div className={`${style.cardStatus} ${style[status]}`}>● {status}</div>
@@ -49,7 +49,7 @@ export default function ProjectCard({ video, thumbnail, title, brand, skills, st
                                 })}
                             </p>
                         </div>
-                    </div>
+                    </button>
                     {portal(
                         <>
                             <ProjectDetails
