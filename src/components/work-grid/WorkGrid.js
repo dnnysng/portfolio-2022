@@ -7,7 +7,8 @@ import quickTrailers from "../../assets/images/quicktrailers-thumbnail.png";
 import vl from "../../assets/images/vl-laptop.png";
 import newsLetter from "../../assets/images/newsletter.png";
 import reactDocs from "../../assets/images/react-docs-thumbnail.png";
-import salaryCalc from "../../assets/images/ahit-salary-calc-thumbnail.png";
+// import salaryCalc from "../../assets/images/ahit-salary-calc-thumbnail.png";
+import salaryCalcRE from "../../assets/images/mlo-salary-calc-thumbnail.png";
 import psCountdown from "../../assets/images/ps-countdown-thumbnail.png";
 import fakeinvestor from "../../assets/images/fakeinvestor-thumbnail.png";
 
@@ -28,6 +29,28 @@ export default function WorkGrid() {
 
     const projects = [
         {
+            thumbnail: ahitHomepage,
+            video: null,
+            brand: "AHIT",
+            title: "Homepage Redesign",
+            skills: ["Figma", "Vanilla JS", "WordPress", "Avada", "APIs"],
+            status: "live",
+            summary:
+                "AHIT is the leading national home inpsection school and I was tasked with building a new homepage. I learned a lot during this project while working cross-functionally with designers, content specialists, and SEM teams.",
+            url: "https://www.ahit.com",
+        },
+        {
+            thumbnail: salaryCalcRE,
+            video: null,
+            brand: "The CE Shop",
+            title: "MLO Salary Calculator",
+            skills: ["Vanilla JS", "Drupal", "APIs", "Design"],
+            status: "live",
+            summary:
+                "This mortgage loan originator salary calculator allows potential students to see their earning potential. Built with vanilla javascript, this calc pulls salary data from ZipRecruiter based on selected state.",
+            url: "https://www.theceshop.com/mortgage/#mlo-salary-calc",
+        },
+        {
             video: afexpressVideo,
             thumbnail: null,
             brand: "AF Express",
@@ -38,28 +61,17 @@ export default function WorkGrid() {
                 "This react web application serves as the hub for the AF Express NFT collection on Solana. Its pages are routed with react-router, animated using framer motion, and provide an NFT dashboard to retrieve token data fetched from the Magiceden API.",
             url: "https://afexpress.art",
         },
-        {
-            thumbnail: ahitHomepage,
-            video: null,
-            brand: "AHIT",
-            title: "Homepage Redesign",
-            skills: ["Figma", "Vanilla JS", "WordPress", "Avada"],
-            status: "live",
-            summary:
-                "AHIT is the leading national home inpsection school and I was tasked with building a new homepage. I learned a lot during this project while working cross-functionally with designers, content specialists, and SEM teams.",
-            url: "https://www.ahit.com",
-        },
-        {
-            thumbnail: salaryCalc,
-            video: null,
-            brand: "AHIT",
-            title: "Home Inspector Salary Calculator",
-            skills: ["Vanilla JS", "WordPress", "APIs", "Avada", "Design"],
-            status: "live",
-            summary:
-                "This home inspection salary calculator allows potential students to see their earning potential. Built with vanilla javascript, this calc uses data from HomeAdvisor to calculate salaries based on location and anticipated workload.",
-            url: "https://www.ahit.com/how-much-does-a-home-inspector-make/",
-        },
+        // {
+        //     thumbnail: salaryCalc,
+        //     video: null,
+        //     brand: "AHIT",
+        //     title: "Home Inspector Salary Calculator",
+        //     skills: ["Vanilla JS", "WordPress", "APIs", "Avada", "Design"],
+        //     status: "live",
+        //     summary:
+        //         "This home inspection salary calculator allows potential students to see their earning potential. Built with vanilla javascript, this calc uses data from HomeAdvisor to calculate salaries based on location and anticipated workload.",
+        //     url: "https://www.ahit.com/how-much-does-a-home-inspector-make/",
+        // },
         {
             thumbnail: liftYourself,
             video: null,
