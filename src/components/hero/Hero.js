@@ -8,7 +8,7 @@ export default function Hero() {
                 <p className={style.paragraph}>
                     I'm an experienced <span className={style.underline}> designer</span>{" "}
                     <span className={style.success}>+</span> <span className={style.underline}>developer</span>{" "}
-                    specializing in pixel-perfect websites. I'm the guy you need for your frontend projects.
+                    specializing in pixel-perfect websites. Let me take your frontend projects from vision to reality.
                 </p>
             </div>
         </section>
